@@ -116,11 +116,11 @@ nav ul li a {
 /* Media Queries for responsive design */
 @media (max-width: 720px) {
     header h1 {
-        font-size: 2rem; /* Adjust size for smaller screens */
+        font-size: 1rem; /* Adjust size for smaller screens */
     }
 
     .subtitle {
-        font-size: 1rem; /* Adjust size for smaller screens */
+        font-size: 0.5rem; /* Adjust size for smaller screens */
         display: block; /* Move subtitle below title */
         margin-left: 0; /* Remove margin for better spacing */
     }
