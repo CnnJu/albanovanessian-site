@@ -21,7 +21,6 @@ a:hover {
     color: #c8aaff;
 }
 
-
 .container {
     width: 100%;
     max-width: 1800px;
@@ -106,26 +105,6 @@ nav ul li a {
     position: absolute;
     top: 20px;
     right: 15px;
-}
-
-/* Mobile menu styles */
-.nav-menu ul {
-    flex-direction: row; /* Keep menu items in a row by default */
-}
-
-.nav-menu.active {
-    display: flex; /* Show the menu when the hamburger is clicked */
-    flex-direction: column; /* Stack menu items vertically */
-    width: 100%; /* Ensure full width */
-}
-
-.nav-menu ul {
-    flex-direction: column; /* Stack menu items vertically in mobile view */
-    padding: 0; /* Remove any default padding */
-}
-
-.nav-menu ul li {
-    margin: 10px 0; /* Stack vertically */
 }
 
 /* Media Queries for responsive design */
