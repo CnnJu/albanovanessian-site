@@ -31,7 +31,7 @@ a:hover {
 
 .header-container {
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1800px; /* Adjust as needed */
     margin: 0 auto; /* Center the container horizontally */
     padding: 0 15px; /* Optional: Add padding for small screens */
     box-sizing: border-box;
@@ -87,7 +87,7 @@ nav ul li a {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
