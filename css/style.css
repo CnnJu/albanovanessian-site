@@ -21,6 +21,7 @@ a:hover {
     color: #c8aaff;
 }
 
+
 .container {
     width: 100%;
     max-width: 1800px;
@@ -74,17 +75,14 @@ nav {
     margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for animation */
     transition: max-height 0.3s ease-out; /* Smooth animation */
-    display: flex; /* Ensure flex container behavior */
-    justify-content: center; /* Center content horizontally */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between; /* Space menu items evenly */
+    justify-content: center;
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
-    width: 100%; /* Ensure it takes full width */
     box-sizing: border-box;
 }
 
