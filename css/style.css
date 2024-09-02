@@ -84,6 +84,35 @@ nav ul li a {
     padding: 5px 55px 5px 15px;
     display: block;
 }
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.nav-menu.active {
+    display: block; /* Show the menu when active */
+}
+
+.nav-menu ul {
+    flex-direction: column; /* Stack menu items vertically in mobile view */
+    display: none; /* Hide the menu by default on mobile */
+}
+
+.nav-menu.active ul {
+    display: flex; /* Show the menu items when the menu is active */
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
 
 .footer-container {
     display: flex;
