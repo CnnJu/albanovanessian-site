@@ -130,6 +130,25 @@ nav ul li a {
     .nav-menu.active {
         display: flex; /* Show the menu when the hamburger is clicked */
     }
+    /* Mobile menu styles */
+    .nav-menu ul {
+        flex-direction: row; /* Keep menu items in a row by default */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show the menu when the hamburger is clicked */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Ensure full width */
+    }
+
+    .nav-menu ul {
+        flex-direction: column; /* Stack menu items vertically in mobile view */
+        padding: 0; /* Remove any default padding */
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0; /* Stack vertically */
+    }
 }
 
 .footer-container {
