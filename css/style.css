@@ -110,7 +110,6 @@ nav ul li a {
 
 .nav-menu ul li {
     margin: 10px 0;
-    font-size: 1rem;
 }
 /* Media Queries for responsive design */
 @media (max-width: 720px) {
