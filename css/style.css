@@ -113,6 +113,30 @@ nav ul li a {
 .nav-menu ul li {
     margin: 10px 0;
 }
+/* Media Queries for responsive design */
+@media (max-width: 720px) {
+    header h1 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1rem; /* Adjust size for smaller screens */
+        display: block; /* Move subtitle below title */
+        margin-left: 0; /* Remove margin for better spacing */
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu by default */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu button */
+    }
+
+    .nav-menu.active {
+        display: block; /* Show the menu when the hamburger is clicked */
+    }
+}
 
 .footer-container {
     display: flex;
