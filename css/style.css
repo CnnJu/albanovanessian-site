@@ -74,14 +74,17 @@ nav {
     margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for animation */
     transition: max-height 0.3s ease-out; /* Smooth animation */
+    display: flex; /* Ensure flex container behavior */
+    justify-content: center; /* Center content horizontally */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Space menu items evenly */
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
+    width: 100%; /* Ensure it takes full width */
     box-sizing: border-box;
 }
 
@@ -94,20 +97,59 @@ nav ul li a {
     display: block;
 }
 
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+/* Mobile menu styles */
+.nav-menu {
+    display: flex; /* Ensure menu is visible by default on larger screens */
+}
+
+.nav-menu ul {
+    flex-direction: row; /* Keep menu items in a row by default */
+}
+
+.nav-menu.active {
+    display: flex; /* Show the menu when the hamburger is clicked */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Ensure full width */
+    max-height: 500px; /* Adjust height as needed for smooth animation */
+}
+
+.nav-menu ul {
+    flex-direction: column; /* Stack menu items vertically in mobile view */
+    padding: 0; /* Remove any default padding */
+    transition: max-height 0.3s ease-out; /* Smooth animation */
+}
+
+.nav-menu ul li {
+    margin: 10px 0; /* Stack vertically */
+}
+
 /* Media Queries for responsive design */
 @media (max-width: 720px) {
     header h1 {
-        font-size: 1rem; /* Adjust size for smaller screens */
+        font-size: 1.5rem; /* Adjust size for smaller screens */
     }
 
     .subtitle {
-        font-size: 0.5rem; /* Adjust size for smaller screens */
+        font-size: 0.75rem; /* Adjust size for smaller screens */
         display: block; /* Move subtitle below title */
         margin-left: 0; /* Remove margin for better spacing */
     }
 
     .nav-menu {
-        display: none; /* Hide the menu by default */
+        display: none; /* Hide the menu by default on mobile */
     }
 
     .hamburger {
@@ -115,7 +157,7 @@ nav ul li a {
     }
 
     .nav-menu.active {
-        display: block; /* Show the menu when the hamburger is clicked */
+        display: flex; /* Show the menu when the hamburger is clicked */
     }
 }
 
@@ -163,6 +205,7 @@ nav ul li a {
     margin: 0 10px;
     font-size: 1rem;
 }
+
 .language-options a:hover {
     color: #c8aaff;
 }
