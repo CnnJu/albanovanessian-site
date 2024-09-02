@@ -118,20 +118,6 @@ nav ul li a {
     color: white;
 }
 
-.search-lang button {
-    padding: 8px 12px;
-    font-size: 1rem;
-    border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search-lang button:hover {
-    background-color: #c8aaff;
-}
-
 .language-options {
     margin-top: 10px;
 }
