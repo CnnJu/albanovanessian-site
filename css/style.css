@@ -60,6 +60,8 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 nav ul li {
