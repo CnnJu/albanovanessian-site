@@ -72,8 +72,6 @@ nav {
 .nav-menu {
     max-width: 1800px; /* Same width as container */
     margin: 0 auto; /* Center horizontally */
-    overflow: hidden; /* Hide overflow for animation */
-    transition: max-height 0.3s ease-out; /* Smooth animation */
     display: flex; /* Ensure flex container behavior */
     justify-content: center; /* Center content horizontally */
 }
@@ -90,10 +88,12 @@ nav ul {
 
 nav ul li {
     font-size: 1rem;
+    flex: 1; /* Ensure each item takes up equal space */
+    text-align: center; /* Center text within each item */
 }
 
 nav ul li a {
-    padding: 5px 55px 5px 15px;
+    padding: 5px 0; /* Adjust padding as needed */
     display: block;
 }
 
@@ -111,10 +111,6 @@ nav ul li a {
 }
 
 /* Mobile menu styles */
-.nav-menu {
-    display: flex; /* Ensure menu is visible by default on larger screens */
-}
-
 .nav-menu ul {
     flex-direction: row; /* Keep menu items in a row by default */
 }
@@ -123,13 +119,11 @@ nav ul li a {
     display: flex; /* Show the menu when the hamburger is clicked */
     flex-direction: column; /* Stack menu items vertically */
     width: 100%; /* Ensure full width */
-    max-height: 500px; /* Adjust height as needed for smooth animation */
 }
 
 .nav-menu ul {
     flex-direction: column; /* Stack menu items vertically in mobile view */
     padding: 0; /* Remove any default padding */
-    transition: max-height 0.3s ease-out; /* Smooth animation */
 }
 
 .nav-menu ul li {
