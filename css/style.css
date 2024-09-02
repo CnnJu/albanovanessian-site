@@ -70,31 +70,30 @@ nav {
 }
 
 .nav-menu {
-    width: 100%; /* Full width of container */
-    max-width: 1800px; /* Match header-container width */
+    max-width: 1800px; /* Same width as container */
     margin: 0 auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow for animation */
+    transition: max-height 0.3s ease-out; /* Smooth animation */
     display: flex; /* Ensure flex container behavior */
     justify-content: center; /* Center content horizontally */
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Align menu items in a row */
-    justify-content: space-between; /* Space items evenly */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    width: 100%; /* Full width of container */
+    display: flex;
+    justify-content: space-between; /* Space menu items evenly */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    width: 100%; /* Ensure it takes full width */
     box-sizing: border-box;
 }
 
 nav ul li {
     font-size: 1rem;
-    flex: 1; /* Make each item take up equal space */
-    text-align: center; /* Center text within each item */
 }
 
 nav ul li a {
-    padding: 5px; /* Adjust padding as needed */
+    padding: 5px 55px 5px 15px;
     display: block;
 }
 
