@@ -20,6 +20,13 @@ body, html {
     min-height: 100vh;
 }
 
+.header-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    padding: 0 15px; /* Optional: Add padding for small screens */
+    box-sizing: border-box;
+}
+
 header {
     text-align: center;
     margin-bottom: 20px;
