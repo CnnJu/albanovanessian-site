@@ -47,10 +47,12 @@ a:hover {
 header {
     text-align: center;
     margin-bottom: 5px;
+    position: relative;
 }
 
 h1 {
     font-size: 3rem;
+    display: inline;
 }
 .subtitle {
     font-size: 1.5rem; /* Adjust size to be half of h1 or as needed */
@@ -61,10 +63,6 @@ h1 {
 
 nav {
     width: 100%;
-    margin-bottom: 5px; 
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    box-sizing: border-box;
 }
 
 nav ul {
@@ -112,6 +110,7 @@ nav ul li a {
 
 .nav-menu ul li {
     margin: 10px 0;
+    font-size: 1rem;
 }
 /* Media Queries for responsive design */
 @media (max-width: 720px) {
