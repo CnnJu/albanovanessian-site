@@ -27,15 +27,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center; /* Center horizontally */
     min-height: 100vh;
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 15px; /* Add padding for responsiveness */
+    box-sizing: border-box;
 }
 
 .header-container {
     width: 100%;
-    max-width: 1800px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 15px; /* Optional: Add padding for small screens */
+    max-width: 1800px; /* Same width as container */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 15px; /* Add padding for small screens */
     box-sizing: border-box;
     position: fixed; /* Fix the header-container at the top */
     top: 0;
@@ -47,13 +50,14 @@ a:hover {
 header {
     text-align: center;
     margin-bottom: 5px;
-    position: relative;
+    position: relative; /* For positioning the hamburger button */
 }
 
 h1 {
     font-size: 3rem;
     display: inline;
 }
+
 .subtitle {
     font-size: 1.5rem; /* Adjust size to be half of h1 or as needed */
     display: inline; /* Ensure subtitle is inline */
@@ -63,6 +67,13 @@ h1 {
 
 nav {
     width: 100%;
+}
+
+.nav-menu {
+    max-width: 1800px; /* Same width as container */
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow for animation */
+    transition: max-height 0.3s ease-out; /* Smooth animation */
 }
 
 nav ul {
@@ -81,34 +92,6 @@ nav ul li {
 nav ul li a {
     padding: 5px 55px 5px 15px;
     display: block;
-}
-/* Hamburger menu styles */
-.hamburger {
-    display: none; /* Hide by default */
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 15px;
-}
-/* Mobile menu styles */
-.nav-menu {
-    display: flex; /* Ensure menu is visible by default on larger screens */
-}
-
-.nav-menu ul {
-    flex-direction: row; /* Keep menu items in a row by default */
-}
-
-.nav-menu.active ul {
-    display: flex; /* Show the menu items when the menu is active */
-}
-
-.nav-menu ul li {
-    margin: 10px;
 }
 
 /* Media Queries for responsive design */
