@@ -62,3 +62,78 @@ nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 0 15px; /* Optional: Add padding for small screens */
+    box-sizing: border-box;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.search-lang form {
+    margin-bottom: 15px;
+}
+
+.search-lang input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+.search-lang button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-lang button:hover {
+    background-color: #555;
+}
+
+.language-options {
+    margin-top: 10px;
+}
+
+.language-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.language-options a:hover {
+    text-decoration: underline;
+}
