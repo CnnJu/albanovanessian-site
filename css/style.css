@@ -22,10 +22,12 @@ a:hover {
 }
 
 .container {
+    width: 100%;
+    max-width: 1800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     min-height: 100vh;
 }
 
@@ -43,8 +45,8 @@ a:hover {
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 h1 {
@@ -59,7 +61,7 @@ h1 {
 
 nav {
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 5px; 
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     box-sizing: border-box;
@@ -68,7 +70,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     box-sizing: border-box;
@@ -76,7 +78,6 @@ nav ul {
 
 nav ul li {
     font-size: 1rem;
-    margin: 0 15px;
 }
 
 nav ul li a {
