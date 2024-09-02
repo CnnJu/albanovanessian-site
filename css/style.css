@@ -70,7 +70,8 @@ nav {
 }
 
 .nav-menu {
-    max-width: 1800px; /* Same width as container */
+    width: 100%; /* Full width of container */
+    max-width: 1800px; /* Match header-container width */
     margin: 0 auto; /* Center horizontally */
     display: flex; /* Ensure flex container behavior */
     justify-content: center; /* Center content horizontally */
@@ -78,22 +79,22 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between; /* Space menu items evenly */
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    width: 100%; /* Ensure it takes full width */
+    display: flex; /* Align menu items in a row */
+    justify-content: space-between; /* Space items evenly */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Full width of container */
     box-sizing: border-box;
 }
 
 nav ul li {
     font-size: 1rem;
-    flex: 1; /* Ensure each item takes up equal space */
+    flex: 1; /* Make each item take up equal space */
     text-align: center; /* Center text within each item */
 }
 
 nav ul li a {
-    padding: 5px 0; /* Adjust padding as needed */
+    padding: 5px; /* Adjust padding as needed */
     display: block;
 }
 
@@ -174,6 +175,7 @@ nav ul li a {
 
 .footer-column ul li {
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .search-lang form {
