@@ -94,14 +94,13 @@ nav ul li a {
     top: 20px;
     right: 15px;
 }
-
-.nav-menu.active {
-    display: block; /* Show the menu when active */
+/* Mobile menu styles */
+.nav-menu {
+    display: flex; /* Ensure menu is visible by default on larger screens */
 }
 
 .nav-menu ul {
-    flex-direction: column; /* Stack menu items vertically in mobile view */
-    display: none; /* Hide the menu by default on mobile */
+    flex-direction: row; /* Keep menu items in a row by default */
 }
 
 .nav-menu.active ul {
@@ -109,8 +108,9 @@ nav ul li a {
 }
 
 .nav-menu ul li {
-    margin: 10px 0;
+    margin: 10px;
 }
+
 /* Media Queries for responsive design */
 @media (max-width: 720px) {
     header h1 {
