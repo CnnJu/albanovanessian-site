@@ -99,14 +99,13 @@ nav ul li a {
 /* Hamburger menu styles */
 .hamburger {
     display: none; /* Hide by default */
+    margin: 10px auto 0;
     font-size: 1.5rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 15px;
+    position: relative;
 }
 
 /* Media Queries for responsive design */
