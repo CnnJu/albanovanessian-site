@@ -211,7 +211,7 @@ nav ul li a {
 
 .project-image {
     display: block;
-    width: 100%; /* Adjust as needed */
+    width: 50%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop image if necessary */
 }
@@ -232,7 +232,7 @@ nav ul li a {
 }
 
 .project-title {
-    color: black; /* Change to black to contrast with white background */
+    color: white; /* Change to black to contrast with white background */
     font-size: 24px; /* Adjust size as needed */
     margin: 0;
     text-align: center;
@@ -241,7 +241,7 @@ nav ul li a {
 }
 
 .read-more {
-    color: black; /* Change to black to contrast with white background */
+    color: white; /* Change to black to contrast with white background */
     font-size: 16px; /* Adjust size as needed */
     margin-top: auto; /* Push to the bottom */
     text-align: center;
