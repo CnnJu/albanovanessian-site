@@ -28,7 +28,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center horizontally */
-    min-height: 100vh;
     margin: 0 auto; /* Center container horizontally */
     padding: 0 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
