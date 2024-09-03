@@ -86,6 +86,7 @@ nav ul {
 
 nav ul li {
     font-size: 1.5rem;
+    font-family: anton;
 }
 
 nav ul li a {
@@ -198,4 +199,62 @@ nav ul li a {
 
 .language-options a:hover {
     color: #c8aaff;
+}
+
+.project-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-image {
+    display: block;
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image if necessary */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 10); /* Transparent by default */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.project-title {
+    color: black; /* Change to black to contrast with white background */
+    font-size: 24px; /* Adjust size as needed */
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.read-more {
+    color: black; /* Change to black to contrast with white background */
+    font-size: 16px; /* Adjust size as needed */
+    margin-top: auto; /* Push to the bottom */
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin-bottom: 20px; /* Adjust to move the text slightly up */
+}
+
+.project-link:hover .overlay {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white on hover */
+    opacity: 1;
+}
+
+.project-link:hover .project-title,
+.project-link:hover .read-more {
+    opacity: 1;
 }
