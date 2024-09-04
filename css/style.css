@@ -374,9 +374,6 @@ ul {
     justify-content: space-between;
     margin-bottom: 25px;
 }
-.support-left-column {
-    flex: 1;
-}
 
 .support-center-column, .support-right-column {
     display: flex;
