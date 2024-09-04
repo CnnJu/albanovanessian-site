@@ -368,6 +368,26 @@ ul {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for a 3D effect */
 }
 
+.project-support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.support-left-column {
+    flex: 1;
+}
+
+.support-center-column, .support-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-logo {
+    width: 100px;
+    height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-columns {
