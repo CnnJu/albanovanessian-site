@@ -5,7 +5,7 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 
 // project image array
 const images = [
-    'img/project/breakintwo/IMG_7834_2_PNG.webp',
+    'img/project/breakintwo/IMG_7834 2_PNG.webp',
     'img/project/breakintwo/IMG_7827_PNG.webp',
     'img/project/breakintwo/IMG_1538_JPG.webp',
     'img/project/breakintwo/ec5757_fd4036ec2a1d419c9b7cbbfac6c11b7d~mv2.webp',
