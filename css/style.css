@@ -195,6 +195,7 @@ nav ul li a {
 }
 
 .search-lang input[type="text"] {
+    align-content: center;
     padding: 8px;
     font-size: 1rem;
     border: 1px solid #555;
