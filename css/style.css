@@ -294,7 +294,7 @@ p {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
     line-height: 1.2;
-    font-size: 0.7rem;
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
 }
 
 h3 {
