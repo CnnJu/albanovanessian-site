@@ -150,13 +150,16 @@ nav ul li a {
     .nav-menu ul li {
         margin: 10px 0; /* Stack vertically */
     }
+    .footer-container {
+        display: none;
+    }
 }
 
 .footer-container {
     position: fixed;
     bottom: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
@@ -165,20 +168,30 @@ nav ul li a {
 }
 
 .footer-column {
-    width: 30%;
+    flex: 1;
+    text-align: center;
 }
 
-.footer-column ul {
-    list-style-type: none;
+.footer-column.contact {
+    text-align: left;
 }
 
-.footer-column ul li {
-    margin-bottom: 10px;
-    margin-left: 10px;
+.footer-column.language-options {
+    text-align: right;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-column a:hover {
+    color: #c8aaff;
 }
 
 .search-lang form {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .search-lang input[type="text"] {
@@ -190,20 +203,6 @@ nav ul li a {
     color: white;
 }
 
-.language-options {
-    margin-top: 10px;
-}
-
-.language-options a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
-}
-
-.language-options a:hover {
-    color: #c8aaff;
-}
 
 .project-link {
     position: relative;
