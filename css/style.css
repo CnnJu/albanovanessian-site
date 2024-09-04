@@ -396,3 +396,22 @@ ul {
     height: 100%;
     border: 0;
 }
+
+.youtube-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 20%; /* Adjust size as needed */
+    opacity: 0.7; /* Optional: make the logo slightly transparent */
+    transition: opacity 0.3s ease;
+}
+
+.video-container:hover .youtube-logo {
+    opacity: 0.9; /* Make the logo more visible on hover */
+}
+
+.video-container iframe {
+    z-index: 1;
+}
