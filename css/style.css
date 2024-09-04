@@ -262,13 +262,3 @@ nav ul li a {
 .project-link:hover .read-more {
     opacity: 1;
 }
-
-.project-paragraph {
-    color: white;
-}
-.project-title h1 {
-    font-size: 2rem;
-    font-family: sans-serif;
-    text-align: center;
-
-}
