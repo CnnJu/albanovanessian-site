@@ -262,3 +262,93 @@ nav ul li a {
 .project-link:hover .read-more {
     opacity: 1;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, p, ul {
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+    font-weight: 300;
+}
+
+h3 {
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    background-color: #d3d3d3; /* Light grey background */
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+}
+
+.project-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-columns {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+}
