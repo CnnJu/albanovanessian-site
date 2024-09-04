@@ -195,7 +195,7 @@ nav ul li a {
 }
 
 input[type="text"] {
-    align-content: center;
+    align-content: right;
     padding: 8px;
     font-size: 1rem;
     border: 1px solid #555;
