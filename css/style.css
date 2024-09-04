@@ -269,6 +269,15 @@ main {
     padding: 20px;
 }
 
+.project-img-main {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
 h1, h2, h3, ul {
     color: white;
 
