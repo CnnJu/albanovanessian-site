@@ -194,12 +194,11 @@ nav ul li a {
     margin-bottom: 0;
 }
 
-.search-lang input[type="text"] {
+.footer-column.search-lang input[type="text"] {
     align-content: center;
     padding: 8px;
     font-size: 1rem;
     border: 1px solid #555;
-    border-radius: 4px;
     background-color: #333;
     color: white;
 }
