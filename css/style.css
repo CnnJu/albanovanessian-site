@@ -194,7 +194,7 @@ nav ul li a {
     margin-bottom: 0;
 }
 
-.footer-column.search-lang input[type="text"] {
+input[type="text"] {
     align-content: center;
     padding: 8px;
     font-size: 1rem;
