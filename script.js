@@ -1,6 +1,9 @@
+// hamburger menu
 document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('active');
 });
+
+// project image array
 const images = [
     'img/project/breakintwo/IMG_7834_2_PNG.webp',
     'img/project/breakintwo/IMG_7827_PNG.webp',
@@ -10,12 +13,10 @@ const images = [
     'img/project/breakintwo/ec5757_7c92885bb0b04ba09217438848749872~mv2.webp'
 ];
 
-const projectImgDiv = document.querySelector('.project-img');
+const container = document.querySelector('.project-img');
 
 images.forEach(src => {
     const img = document.createElement('img');
     img.src = src;
-    img.alt = 'Project image';
-    img.className = 'project-img-main';
-    projectImgDiv.appendChild(img);
+    container.appendChild(img);
 });
