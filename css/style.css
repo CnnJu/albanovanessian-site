@@ -269,13 +269,9 @@ main {
     padding: 20px;
 }
 
-h1, h2, h3, p, ul {
+h1, h2, h3, ul {
     color: white;
-}
 
-p {
-    font-family: "Azeret Mono", monospace;
-    font-optical-sizing: auto;
 }
 
 h1 {
@@ -294,6 +290,10 @@ h2 {
 p {
     text-align: left;
     font-weight: 200;
+    color: white;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    line-height: 1.2;
 }
 
 h3 {
