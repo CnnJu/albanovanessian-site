@@ -289,11 +289,12 @@ h2 {
 
 p {
     text-align: left;
-    font-weight: 200;
+    font-weight: 100;
     color: white;
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
     line-height: 1.2;
+    font-size: 0.7rem;
 }
 
 h3 {
