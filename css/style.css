@@ -372,6 +372,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 .support-left-column {
     flex: 1;
