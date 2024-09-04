@@ -168,7 +168,7 @@ input[type="text"] {
 }
 
 /* Media Queries for responsive design */
-@media (max-width: 760px) {
+@media (max-width: 780px) {
     .nav-menu {
         display: none; /* Hide the menu by default on mobile */
     }
