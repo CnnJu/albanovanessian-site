@@ -153,6 +153,8 @@ nav ul li a {
 }
 
 .footer-container {
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     max-width: 1800px;
