@@ -156,7 +156,7 @@ nav ul li a {
     position: fixed;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
@@ -261,4 +261,11 @@ nav ul li a {
 .project-link:hover .project-title,
 .project-link:hover .read-more {
     opacity: 1;
+}
+
+.project-title h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+
 }
