@@ -199,6 +199,8 @@ input[type="text"] {
     .nav-menu ul li {
         margin: 10px 0; /* Stack vertically */
     }
+}
+@media (max-width: 720px) {
     .footer-container {
         display: none;
     }
