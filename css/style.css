@@ -263,6 +263,9 @@ nav ul li a {
     opacity: 1;
 }
 
+.project-title {
+    color: white;
+}
 .project-title h1 {
     font-size: 2rem;
     font-family: sans-serif;
