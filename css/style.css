@@ -271,6 +271,9 @@ main {
 
 h1, h2, h3, p, ul {
     color: white;
+}
+
+p {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
 }
