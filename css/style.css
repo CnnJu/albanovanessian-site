@@ -178,8 +178,9 @@ nav ul li a {
 
 .footer-column.language-options {
     text-align: right;
-    margin-top: 10px;
-    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px 0px 10px;
 }
 
 .footer-column a {
