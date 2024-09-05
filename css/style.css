@@ -1,3 +1,72 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-Digital.woff2') format('woff2'),
+        url('DS-Digital.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-Digital-Italic.woff2') format('woff2'),
+        url('DS-Digital-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-Digital-BoldItalic.woff2') format('woff2'),
+        url('DS-Digital-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-Digital-Bold.woff2') format('woff2'),
+        url('DS-Digital-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Plain O Matic';
+    src: url('PlainOMatic.woff2') format('woff2'),
+        url('PlainOMatic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Commodore 64 Angled';
+    src: url('Commodore64Angled.woff2') format('woff2'),
+        url('Commodore64Angled.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commodore 64 Rounded';
+    src: url('Commodore64Rounded.woff2') format('woff2'),
+        url('Commodore64Rounded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commodore 64';
+    src: url('Commodore64.woff2') format('woff2'),
+        url('Commodore64.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     margin: 0;
     padding: 0;
@@ -32,7 +101,22 @@ a:hover {
     padding: 0 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Republica Minor';
+    src: url('RepublicaMinorRegular.woff2') format('woff2'),
+        url('RepublicaMinorRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Anton';
+    src: url('Anton-Regular.woff2') format('woff2'),
+        url('Anton-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 .header-container {
     width: 100%;
     max-width: 1200px; /* Same width as container */
