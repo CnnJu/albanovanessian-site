@@ -417,7 +417,7 @@ h5 {
 
 .subtitle {
     font-family: 'DS Digital', sans-serif;
-    font-size: 10px; /* Convert rem to px if needed */
+    font-size: 10px;
     letter-spacing: 0.2em;
 }
 
