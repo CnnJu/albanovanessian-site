@@ -286,8 +286,8 @@ ul {
 
 .project-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Increase image size */
-    grid-gap: 10px; /* Adjust spacing between images */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Default to horizontal layout */
+    grid-gap: 10px;
     margin-top: 10px;
 }
 
@@ -295,7 +295,14 @@ ul {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: box-shadow 0.3s ease; /* Keep only the shadow transition */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .project-img {
+        grid-template-columns: 1fr; /* Stack images vertically */
+    }
 }
 
 .project-support {
