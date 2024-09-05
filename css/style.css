@@ -141,13 +141,6 @@ header {
     display: block;       /* Remove any extra spaces under the image */
 }
 
-.subtitle {
-    font-size: 2.5rem; /* Adjust size to be half of h1 or as needed */
-    display: inline; /* Ensure subtitle is inline */
-    margin-left: 5px; /* Adjust spacing between title and subtitle if needed */
-    vertical-align: baseline; /* Align vertically with the title text */
-}
-
 nav {
     width: 100%;
 }
