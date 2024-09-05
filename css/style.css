@@ -91,18 +91,22 @@ footer {
     box-sizing: border-box;
 }
 
+.header-container {
+    position: relative; /* Ensure this container is the reference for absolute positioning */
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: flex-start; 
     padding: 10px 0;
     position: relative; 
 }
 
 .header-image {
     width: 100%;
-    height: auto;         
-    display: block;
+    height: auto;
+    
 }
 
 .hamburger {
