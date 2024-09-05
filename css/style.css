@@ -110,7 +110,7 @@ header {
 
 .header-language-options {
     display: flex;
-    align-items: center;
+    align-items:first baseline;
 }
 
 .header-language-options a {
