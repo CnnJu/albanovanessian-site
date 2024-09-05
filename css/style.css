@@ -181,10 +181,10 @@ footer {
 
 .footer-column.contact {
     text-align: left; /* Align contact info to the left */
+    font-family: "Anton", sans-serif;
 }
 
 .footer-column a {
-    font-family: "Anton", sans-serif;
     color: white;
     text-decoration: none;
     font-size: 1rem;
