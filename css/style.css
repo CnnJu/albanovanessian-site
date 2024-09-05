@@ -38,6 +38,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Lucida Console';
+    src: url('LucidaConsole.woff2') format('woff2'),
+        url('LucidaConsole.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     margin: 0;
     padding: 0;
@@ -335,7 +343,7 @@ p {
     text-align: left;
     font-weight: 100;
     color: white;
-    font-family: "Azeret Mono", monospace;
+    font-family: 'Lucida Console', sans-serif;
     font-optical-sizing: auto;
     line-height: 2;
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
