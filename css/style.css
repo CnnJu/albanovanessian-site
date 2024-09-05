@@ -209,15 +209,129 @@ footer {
     color: white;
 }
 
-/* Media Queries for responsive design */
-@media (max-width: 768px) {
-    .project-columns {
-        flex-direction: column;
-    }
+h1, h2, h3, ul {
+    color: white;
+}
 
-    .left-column, .right-column {
-        width: 100%;
-    }
+h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset position to truly center */
+    font-size: 4rem;
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+}
+
+p {
+    text-align: left;
+    font-weight: 100;
+    color: white;    
+    font-family: poppins-extralight, poppins, sans-serif;
+    font-optical-sizing: auto;
+    line-height: 2;
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+}
+
+h3 {
+    font-family: 'Republica Minor', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    background-color: #d3d3d3;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-family: 'Plain O Matic', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.3em;
+}
+
+h5 {
+    font-family: 'Commodore 64 Angled', sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0;
+}
+
+.subtitle {
+    font-family: 'DS-Digital', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+
+.project-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.project-img img:hover {
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for a 3D effect */
+}
+
+.project-support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.support-center-column, .support-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.project-support a {
+    font-family: 'Plain O Matic', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+.project-support a:hover {
+    color: #c8aaff;
 }
 
 .video-container {
@@ -236,4 +350,15 @@ footer {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    .project-columns {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
 }
