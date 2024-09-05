@@ -46,18 +46,17 @@
     font-style: normal;
     font-display: swap;
 }
-html, body {
+body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -183,27 +182,26 @@ nav ul li a {
     position: relative;
 }
 
-.footer-container {
+footer {
     width: 100%;
-    max-width: 1200px; /* Same max-width as the container */
-    margin: 0 auto; /* Center the footer horizontally */
-    padding: 0 15px; /* Padding for responsiveness */
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between; /* Evenly space out the footer columns */
-    align-items: center; /* Align items vertically */
-    position: relative;
-    background-color: black; /* Footer background (adjust as needed) */
-    z-index: 1000; /* Ensure it stays on top if necessary */
-}
-
-.footer {
+    background-color: black;
     margin-top: auto;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between columns */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 1200px; /* Ensure it's centered with the same max-width as your container */
+    margin: 0 auto; /* Center the footer */
+    padding: 10px 15px; /* Add padding for responsiveness */
+    box-sizing: border-box;
+}
+
 .footer-column {
-    flex: 1;
-    text-align: center; /* Center the text within each column */
+    flex: 1; /* Allow columns to take equal space */
+    text-align: center;
 }
 
 .footer-column.contact {
@@ -219,6 +217,16 @@ nav ul li a {
 .footer-column a:hover {
     color: #c8aaff;
 }
+
+.search input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+}
+
 
 /* Media Queries for responsive design */
 @media (max-width: 800px) {
