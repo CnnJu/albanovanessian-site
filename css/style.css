@@ -154,6 +154,7 @@ nav ul li a {
 
 .footer-container {
     display: flex;
+    font-family: "Anton", sans-serif;
     justify-content: space-between;
     align-items: center;
     width: 100%;
