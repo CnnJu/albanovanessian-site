@@ -280,7 +280,7 @@ ul {
 
 .project-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 5px;
     margin-top: 10px;
 }
@@ -289,12 +289,12 @@ ul {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth hover effect */
 }
 
-.project-img img:hover {
-    transform: scale(1.1); /* Enlarge image slightly on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for a 3D effect */
+@media (max-width: 600px) {
+    .project-img {
+        grid-template-columns: 1fr; /* Stack images vertically */
+    }
 }
 
 .project-support {
