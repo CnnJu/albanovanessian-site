@@ -365,3 +365,59 @@ ul {
         display: none;
     }
 }
+.project {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    max-width: 600px; /* Example width; adjust to fit your design */
+    margin: 0 auto; /* Center the project container */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure image fits its container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Adjust as needed */
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Fade-in effect on hover */
+}
+
+.project:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.projects-page-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and read more text */
+}
+
+.read-more {
+    font-size: 1.25rem; /* Adjust size as needed */
+    background: #c8aaff; /* Background color for the read more text */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #a68fda; /* Darker shade on hover */
+}
