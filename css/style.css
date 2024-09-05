@@ -393,7 +393,8 @@ p {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-family: 'Republica Minor', sans-serif;
+    font-size: 25px;
     text-align: left;
     font-weight: bold;
     color: black;
@@ -404,19 +405,27 @@ h3 {
 }
 
 h4 {
+    font-family: 'Plain O Matic', sans-serif;
+    font-size: 14px;
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 0.2rem;
+    letter-spacing: 0.1em;
 }
 
 h5 {
+    font-family: 'Commodore 64 Angled', sans-serif;
+    font-size: 12px;
     margin-top: 0;
     font-size: 1rem;
     margin-bottom: 0.1rem;
+    letter-spacing: 0;
 }
 
 .subtitle {
-    font-size: 0.7rem;
+    font-family: 'DS Digital', sans-serif;
+    font-size: 10px; /* Convert rem to px if needed */
+    letter-spacing: 0;
 }
 
 .project-columns {
