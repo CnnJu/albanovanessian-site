@@ -23,7 +23,7 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@ a:hover {
 
 .header-container {
     width: 100%;
-    max-width: 1500px; /* Same width as container */
+    max-width: 1200px; /* Same width as container */
     margin: 0 auto; /* Center container horizontally */
     padding: 0 15px; /* Add padding for small screens */
     box-sizing: border-box;
@@ -69,7 +69,7 @@ nav {
 }
 
 .nav-menu {
-    max-width: 1500px; /* Same width as container */
+    max-width: 1200px; /* Same width as container */
     margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for animation */
     transition: max-height 0.3s ease-out; /* Smooth animation */
@@ -114,7 +114,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
