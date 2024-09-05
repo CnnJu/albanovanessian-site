@@ -342,8 +342,8 @@ h2 {
 p {
     text-align: left;
     font-weight: 100;
-    color: white;
-    font-family: 'Lucida Console', sans-serif;
+    color: white;    
+    font-family: poppins-extralight, poppins, sans-serif;
     font-optical-sizing: auto;
     line-height: 2;
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
