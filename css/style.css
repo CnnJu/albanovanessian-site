@@ -406,9 +406,6 @@ ul {
     font-weight: bold;
     margin-bottom: 10px; /* Space between title and read more text */
 }
-.projects-page-title h3 {
-    background-color: transparent;
-}
 
 .read-more {
     font-size: 1.25rem; /* Adjust size as needed */
