@@ -242,16 +242,17 @@ input[type="text"] {
     text-align: center;
     transition: opacity 0.3s ease;
     opacity: 0;
+    background-color: transparent;
 }
 
 .read-more {
-    color: white; /* Change to black to contrast with white background */
-    font-size: 16px; /* Adjust size as needed */
-    margin-top: auto; /* Push to the bottom */
+    color: white;
+    font-size: 16px;
+    margin-top: auto;
     text-align: center;
     transition: opacity 0.3s ease;
     opacity: 0;
-    margin-bottom: 20px; /* Adjust to move the text slightly up */
+    margin-bottom: 20px;
 }
 
 .project-link:hover .overlay {
