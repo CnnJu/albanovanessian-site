@@ -106,10 +106,6 @@ header {
     
 }
 
-.hamburger {
-    display: none; 
-}
-
 .header-container {
     position: relative; /* Make the container relative to position child elements absolutely */
 }
@@ -134,6 +130,7 @@ header {
 .header-language-options a:hover {
     color: #c8aaff;
 }
+
 .hamburger {
     display: none; /* Hide by default, show on smaller screens */
     background: none;
@@ -185,13 +182,8 @@ nav {
 .nav-menu {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    display: none;
 }
 
-/* Show menu when .open class is added */
-.nav-menu.open {
-    display: block; /* Show the menu when .open is active */
-}
 
 nav ul {
     list-style-type: none;
