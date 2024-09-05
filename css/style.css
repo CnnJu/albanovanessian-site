@@ -159,6 +159,7 @@ nav ul li a {
 footer {
     background-color: black;
     margin-top: auto;
+    font-family: "Anton", sans-serif;
 }
 
 .footer-container {
@@ -170,6 +171,7 @@ footer {
     margin: 0 auto; /* Center the footer */
     padding: 10px 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
+    
 }
 
 .footer-column {
