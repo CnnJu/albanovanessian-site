@@ -327,16 +327,10 @@ h1, h2, h3, ul {
 }
 
 h1 {
-    font-size: 2rem;
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
     text-align: center;
     font-weight: 400;
-}
-
-h2 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: bold;
 }
 
 p {
@@ -352,6 +346,7 @@ p {
 h3 {
     font-family: 'Republica Minor', sans-serif;
     font-size: 25px;
+    text-transform: uppercase;
     text-align: left;
     font-weight: bold;
     color: black;
