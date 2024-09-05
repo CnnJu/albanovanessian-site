@@ -236,8 +236,8 @@ input[type="text"] {
 }
 
 .projects-page-title {
-    color: white; /* Change to black to contrast with white background */
-    font-size: 24px; /* Adjust size as needed */
+    color: white; 
+    font-size: 24px;
     margin: 0;
     text-align: center;
     transition: opacity 0.3s ease;
@@ -259,7 +259,7 @@ input[type="text"] {
     opacity: 1;
 }
 
-.project-link:hover .project-title,
+.project-link:hover .projects-page-title,
 .project-link:hover .read-more {
     opacity: 1;
 }
