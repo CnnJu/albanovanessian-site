@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'DS Digital';
-    src: url('fonts/DSDigital.woff2') format('woff2'),
-         url('fonts/DSDigital.woff') format('woff');
+    font-family: 'DS-Digital';
+    src: url('fonts/DS-Digital.woff2') format('woff2'),
+         url('fonts/DS-Digital.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -415,7 +415,7 @@ h5 {
 }
 
 .subtitle {
-    font-family: 'Republica Minor', sans-serif;
+    font-family: 'DS-Digital', sans-serif;
     font-size: 10px;
     letter-spacing: 0.2em;
 }
