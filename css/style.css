@@ -410,7 +410,7 @@ h4 {
     font-size: 1rem;
     font-weight: 300;
     margin-bottom: 0.2rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
 }
 
 h5 {
@@ -425,7 +425,7 @@ h5 {
 .subtitle {
     font-family: 'DS Digital', sans-serif;
     font-size: 10px; /* Convert rem to px if needed */
-    letter-spacing: 0;
+    letter-spacing: 0.2em;
 }
 
 .project-columns {
