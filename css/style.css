@@ -132,7 +132,48 @@ header {
 .header-language-options a:hover {
     color: #c8aaff;
 }
+.hamburger {
+    display: none; /* Hide by default, show on smaller screens */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    bottom: 10px; /* Adjust the vertical position as needed */
+    transform: translateX(-50%); /* Ensure it appears above other content */
+}
 
+@media (max-width: 768px) {
+    /* Show hamburger menu button on smaller screens */
+    .hamburger {
+        display: block;
+    }
+    .nav-menu.open .header-language-options {
+        display: block; /* Show language options within the hamburger menu */
+    }
+    .nav-menu {
+        display: none; /* Hide the menu by default on small screens */
+    }
+    .nav-menu.active {
+        display: block; /* Show the menu when .active class is added */
+    }
+    nav ul {
+        display: none; /* Hide the regular menu on smaller screens */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        border-bottom: 1px solid #333; /* Add separator for items */
+    }
+}
 nav {
     width: 100%;
     max-width: 1200px;
@@ -142,6 +183,12 @@ nav {
 .nav-menu {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+    display: none;
+}
+
+/* Show menu when .open class is added */
+.nav-menu.open {
+    display: block; /* Show the menu when .open is active */
 }
 
 nav ul {
