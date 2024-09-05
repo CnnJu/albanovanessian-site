@@ -35,8 +35,8 @@
 
 @font-face {
     font-family: 'Anton';
-    src: url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff2') format('woff2'),
-        url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff') format('woff');
+    src: url('Anton-Regular.woff2') format('woff2'),
+        url('Anton-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

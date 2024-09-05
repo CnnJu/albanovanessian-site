@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Plain O Matic';
-    src: url('PlainOMatic.woff2') format('woff2'),
-        url('PlainOMatic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
