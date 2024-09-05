@@ -126,11 +126,11 @@ header {
 
 nav {
     width: 100%;
+    max-width: 1200px; /* Constrain max width */
+    margin: 0 auto;
 }
 
 .nav-menu {
-    max-width: 1200px; /* Constrain max width */
-    margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for animation */
     transition: max-height 0.3s ease-out; /* Smooth animation */
 }
