@@ -96,6 +96,7 @@ header {
     justify-content: space-between;
     align-items: center; 
     padding: 10px 0;
+    position: relative; 
 }
 
 .header-image {
@@ -109,8 +110,10 @@ header {
 }
 
 .header-language-options {
-    display: flex;
-    align-items: baseline;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    margin: 10px;
 }
 
 .header-language-options a {
