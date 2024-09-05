@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Hamburger menu
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
-            // Toggle the 'open' class on the nav menu
             navMenu.classList.toggle('open');
         });
     }

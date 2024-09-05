@@ -133,21 +133,24 @@ header {
 
 .hamburger {
     display: none; /* Hide by default, show on smaller screens */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    left: 50%; /* Center horizontally */
-    bottom: 10px; /* Adjust the vertical position as needed */
-    transform: translateX(-50%); /* Ensure it appears above other content */
 }
 
 @media (max-width: 768px) {
+    .header-language-options {
+        display: none;
+    }
     /* Show hamburger menu button on smaller screens */
     .hamburger {
         display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        left: 50%; /* Center horizontally */
+        bottom: 10px; /* Adjust the vertical position as needed */
+        transform: translateX(-50%); /* Ensure it appears above other content */
     }
     .nav-menu.open .header-language-options {
         display: block; /* Show language options within the hamburger menu */
