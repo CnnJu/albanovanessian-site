@@ -35,8 +35,8 @@
 
 @font-face {
     font-family: 'Anton';
-    src: url('Anton-Regular.woff2') format('woff2'),
-        url('Anton-Regular.woff') format('woff');
+    src: url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff2') format('woff2'),
+        url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -52,7 +52,6 @@
 }
 
 body, html {
-    max-width: 1200px;
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -77,21 +76,19 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200px; /* Constrain max width */
     margin: 0 auto; /* Center container horizontally */
     padding: 0 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
 }
 
-.header-container {
+.header-container,
+footer {
     width: 100%;
-    max-width: 1200px; /* Same width as container */
-    margin: 0 auto; /* Center container horizontally */
-    padding: 0 15px; /* Add padding for small screens */
+    max-width: 1200px; /* Constrain max width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
-    position: relative;
-    background-color: black; /* Ensure background is consistent */
-    z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 header {
@@ -132,7 +129,7 @@ nav {
 }
 
 .nav-menu {
-    max-width: 1200px; /* Same width as container */
+    max-width: 1200px; /* Constrain max width */
     margin: 0 auto; /* Center horizontally */
     overflow: hidden; /* Hide overflow for animation */
     transition: max-height 0.3s ease-out; /* Smooth animation */
@@ -159,14 +156,7 @@ nav ul li a {
     display: block;
 }
 
-@media (max-width: 720px) {
-    .footer-container {
-        display: none;
-    }
-}
-
 footer {
-    width: 100%;
     background-color: black;
     margin-top: auto;
 }
@@ -287,8 +277,8 @@ ul {
 
 .project-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Default to horizontal layout */
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 5px;
     margin-top: 10px;
 }
 
@@ -296,14 +286,12 @@ ul {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds a smooth hover effect */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    .project-img {
-        grid-template-columns: 1fr; /* Stack images vertically */
-    }
+.project-img img:hover {
+    transform: scale(1.1); /* Enlarge image slightly on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for a 3D effect */
 }
 
 .project-support {
@@ -320,21 +308,8 @@ ul {
 }
 
 .project-logo {
-    max-width: 200px;
+    width: 100px;
     height: auto;
-    margin: 0 10px;
-}
-
-.project-support a {
-    font-family: 'Plain O Matic', sans-serif;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-size: 1rem;
-}
-
-.project-support a:hover {
-    color: #c8aaff;
 }
 
 .video-container {
@@ -363,5 +338,11 @@ ul {
 
     .left-column, .right-column {
         width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-container {
+        display: none;
     }
 }
