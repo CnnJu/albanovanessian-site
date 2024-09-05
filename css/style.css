@@ -311,7 +311,10 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
-
+.image-container {
+    position: relative; /* Position container relative to its normal position */
+    max-width: 100%; /* Ensure the container doesn't exceed the image width */
+}
 .project-img-main {
     width: 100%;
     height: auto;
@@ -327,10 +330,15 @@ h1, h2, h3, ul {
 }
 
 h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset position to truly center */
+    font-size: 4rem;
     font-family: "Anton", sans-serif;
-    font-size: 3rem;
     text-align: center;
     font-weight: 400;
+    z-index: 10;
 }
 
 p {
