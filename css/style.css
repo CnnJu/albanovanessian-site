@@ -85,8 +85,8 @@ a:hover {
 .header-container,
 footer {
     width: 100%;
-    max-width: 1200px; /* Constrain max width */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px; /* Add padding for responsiveness */
     box-sizing: border-box;
 }
@@ -94,18 +94,18 @@ footer {
 header {
     display: flex;
     justify-content: space-between; /* Space between image, button, and language options */
-    align-items: center; /* Center vertically */
+    align-items: center; 
     padding: 10px 0;
 }
 
 .header-image {
-    width: 100%;          /* Make the image take up the full width of the container */
-    height: auto;         /* Maintain the aspect ratio */
-    display: block;       /* Remove any extra spaces under the image */
+    width: 100%;
+    height: auto;         
+    display: block;
 }
 
 .hamburger {
-    display: none; /* Hide the hamburger menu for now; can be shown in responsive views */
+    display: none; 
 }
 
 .header-language-options {
