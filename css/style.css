@@ -184,17 +184,17 @@ nav ul li a {
 }
 
 .footer-container {
-    display: flex;
-    font-family: "Anton", sans-serif;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1200px; /* Same max-width as the container */
+    margin: 0 auto; /* Center the footer horizontally */
+    padding: 0 15px; /* Padding for responsiveness */
     box-sizing: border-box;
-    background-color: transparent; /* Assuming you want no background */
+    display: flex;
+    justify-content: space-between; /* Evenly space out the footer columns */
+    align-items: center; /* Align items vertically */
     position: relative;
+    background-color: black; /* Footer background (adjust as needed) */
+    z-index: 1000; /* Ensure it stays on top if necessary */
 }
 
 .footer {
@@ -203,20 +203,11 @@ nav ul li a {
 
 .footer-column {
     flex: 1;
-    text-align: center;
+    text-align: center; /* Center the text within each column */
 }
 
 .footer-column.contact {
-    text-align: left;
-}
-
-.footer-column.social-media-youtube,
-.footer-column.social-media-instagram {
-    text-align: center;
-}
-
-.footer-column.search {
-    text-align: center;
+    text-align: left; /* Align contact info to the left */
 }
 
 .footer-column a {
@@ -227,24 +218,6 @@ nav ul li a {
 
 .footer-column a:hover {
     color: #c8aaff;
-}
-
-.social-media-youtube,
-.social-media-instagram {
-    margin: 0 10px; /* Adjust margin to ensure proper spacing between social media links */
-}
-
-.search form {
-    margin: 0;
-}
-
-.search input[type="text"] {
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
 }
 
 /* Media Queries for responsive design */
