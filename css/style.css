@@ -117,7 +117,7 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    margin: 0 10px; /* Adjusted margin to widen the space between the links */
+    margin: 0 5px; /* Adjusted margin to widen the space between the links */
 }
 
 .header-language-options a:hover {
