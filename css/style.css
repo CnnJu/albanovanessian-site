@@ -82,20 +82,15 @@ a:hover {
     box-sizing: border-box;
 }
 
-.header-container,
-footer {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
+.header-container {
+    position: relative;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    position: relative; 
+    position: relative;
     height: auto;
 }
 
@@ -103,32 +98,35 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    
-}
-
-.header-container {
-    position: relative; /* Make the container relative to position child elements absolutely */
 }
 
 .header-language-options {
     position: absolute;
-    top: 0; /* Align with the top of the header image */
-    right: 0; /* Align with the right side of the header image */
-    padding: 27px 0px; /* Optional: adjust spacing from the edges */
+    top: 0;
+    right: 0;
+    padding: 27px 15px;
     display: flex;
-    gap: 10px; /* Optional: adjust spacing between language options */
-    z-index: 10; /* Ensure it appears above other elements */
+    gap: 10px;
+    z-index: 10;
 }
 
 .header-language-options a {
-    color: white; /* Set text color for the links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1rem; /* Adjust font size as needed */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 }
-
 
 .header-language-options a:hover {
     color: #c8aaff;
+}
+
+.hamburger-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    left: 50%;
+    bottom: -50px; /* Position below the header image */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Full width */
 }
 
 .hamburger {
@@ -137,9 +135,13 @@ header {
 
 @media (max-width: 768px) {
     .header-language-options {
-        display: none;
+        display: none; /* Hide language options on small screens */
     }
-    /* Show hamburger menu button on smaller screens */
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+
     .hamburger {
         display: block;
         background: none;
@@ -150,32 +152,55 @@ header {
         position: absolute;
         left: 50%; /* Center horizontally */
         bottom: 10px; /* Adjust the vertical position as needed */
-        transform: translateX(-50%); /* Ensure it appears above other content */
+        transform: translateX(-50%); /* Center the button */
     }
-    .nav-menu.open .header-language-options {
-        display: block; /* Show language options within the hamburger menu */
-    }
+
     .nav-menu {
-        display: none; /* Hide the menu by default on small screens */
+        display: none; /* Hide the menu by default */
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: black; /* Background color to cover content */
+        overflow: hidden;
+        z-index: 9;
     }
+
     .nav-menu.active {
         display: block; /* Show the menu when .active class is added */
     }
+
+    .nav-menu .header-language-options {
+        display: flex; /* Show language options in the mobile menu */
+        padding: 15px; /* Adjust padding as needed */
+    }
+
     nav ul {
-        display: none; /* Hide the regular menu on smaller screens */
+        list-style-type: none;
+        display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     nav ul li {
         text-align: center;
+        border-bottom: 1px solid #333;
     }
 
     nav ul li a {
         padding: 10px;
-        border-bottom: 1px solid #333; /* Add separator for items */
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #333; /* Optional: background color on hover */
     }
 }
+
 nav {
     width: 100%;
     max-width: 1200px;
@@ -183,10 +208,10 @@ nav {
 }
 
 .nav-menu {
+    display: block; /* Show the menu by default on wider screens */
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
-
 
 nav ul {
     list-style-type: none;
@@ -207,6 +232,12 @@ nav ul li {
 nav ul li a {
     padding: 5px 50px 5px 15px;
     display: block;
+    color: white; /* Ensure the text color is white */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Optional: background color on hover */
 }
 
 .main-content {

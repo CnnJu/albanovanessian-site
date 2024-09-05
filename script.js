@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('open');
+            navMenu.classList.toggle('active');
         });
     }
 
