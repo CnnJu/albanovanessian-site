@@ -355,6 +355,7 @@ img {
 .project-columns {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
 }
 
 .left-column, .right-column {
