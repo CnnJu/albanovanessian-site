@@ -419,6 +419,7 @@ ul {
     width: 100%;
     height: auto;
     margin: 10px;
+    object-fit: contain;
   }
 
 /*all project page*/
