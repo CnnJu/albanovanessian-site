@@ -458,18 +458,22 @@ ul {
 }
 
 /* 'about' page specifics */
-.artist-statement p {
-    font-family: 'Lucida Console', sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 1.6;
-    color: white;
-    text-align: left;
-    font-optical-sizing: auto;
-    line-height: 2;
-    font-size: clamp(1.25rem, 2vw + 0.2rem, 1rem);
+.about {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the cross-axis */
+    gap: 20px; /* Adjust spacing between image and text */
 }
 
+#aboutprofilepicture {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    max-width: 100%; /* Ensure the image does not exceed its container width */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.about p {
+    max-width: 600px; /* Limit the width of the paragraph for better readability */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
 .about-news {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
