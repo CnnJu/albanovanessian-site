@@ -467,8 +467,8 @@ ul {
 
 #aboutprofilepicture {
     flex-shrink: 0; /* Prevent the image from shrinking */
-    max-width: 100%; /* Ensure the image does not exceed its container width */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 550px; 
+    height: auto; 
 }
 
 .about p {
