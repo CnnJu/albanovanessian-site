@@ -381,10 +381,7 @@ ul {
 
 .fundingplaces{
     display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
     padding: 5px;
-
 }
 @media (max-width: 600px) {
     .project-img {
