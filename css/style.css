@@ -124,120 +124,64 @@ header {
     color: #c8aaff;
 }
 
-.hamburger {
-    display: none;
-    position: absolute;
-    left: 50%;
-    bottom: -50px; /* Position below the header image */
-    transform: translateX(-50%); /* Center horizontally */
+#hamnav {
     width: 100%;
+    background: #000;
 }
 
-@media (max-width: 768px) {
+#hamitems {
+    display: flex;
+}
+
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Anton", sans-serif; /* Apply Anton font */
+}
+
+#hamitems a:hover {
+    background: #af0d0d;
+}
+
+#hamnav label, #hamburger {
+    display: none; /* Hide hamburger button on larger screens */
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 768px) {
     .header-language-options {
         display: none; /* Hide language options on small screens */
     }
 
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
-    }
-
-    .hamburger {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 2rem;
+    #hamnav label {
+        display: inline-block;
         color: white;
-        cursor: pointer;
-        position: absolute;
-        left: 50%; /* Center horizontally */
-        bottom: 10px; /* Adjust the vertical position as needed */
-        transform: translateX(-50%); /* Center the button */
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
     }
 
-    .nav-menu {
-        display: none; /* Hide the menu by default */
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        background-color: black; /* Background color to cover content */
-        overflow: hidden;
+    #hamitems {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black; /* Ensure the menu has a background */
         z-index: 9;
     }
 
-    .nav-menu.active {
-        display: block; /* Show the menu when .active class is added */
-    }
-
-    .nav-menu .header-language-options {
-        display: flex; /* Show language options in the mobile menu */
-        padding: 15px; /* Adjust padding as needed */
-    }
-
-    nav ul {
-        list-style-type: none;
+    #hamburger:checked ~ #hamitems {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
     }
 
-    nav ul li {
-        text-align: center;
-        border-bottom: 1px solid #333;
+    #hamitems a {
+        border-top: 1px solid #333;
+        box-sizing: border-box;
     }
-
-    nav ul li a {
-        padding: 10px;
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-
-    nav ul li a:hover {
-        background-color: #333; /* Optional: background color on hover */
-    }
-}
-
-nav {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-menu {
-    display: block; /* Show the menu by default on wider screens */
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-nav ul li {
-    font-size: 1.5rem;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-nav ul li a {
-    padding: 5px 50px 5px 15px;
-    display: block;
-    color: white; /* Ensure the text color is white */
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #333; /* Optional: background color on hover */
 }
 
 .main-content {
