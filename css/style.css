@@ -135,6 +135,15 @@ header {
 
 .hamburger {
     display: none; /* Hide by default, show on smaller screens */
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    bottom: 10px; /* Adjust the vertical position as needed */
+    transform: translateX(-50%); /* Center the button */
 }
 
 @media (max-width: 768px) {
@@ -148,15 +157,6 @@ header {
 
     .hamburger {
         display: block;
-        background: none;
-        border: none;
-        font-size: 2rem;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        left: 50%; /* Center horizontally */
-        bottom: 10px; /* Adjust the vertical position as needed */
-        transform: translateX(-50%); /* Center the button */
     }
 
     .nav-menu {
@@ -510,10 +510,65 @@ ul {
     margin-bottom: 20px;
 }
 
+/* about page specifics */
 .artist-statement p {
     font-family: 'Lucida Console', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     color: white;
     text-align: left;
+}
+
+.about-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.mosaic-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fit nicely */
+    transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover .mosaic-img {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.img-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-wrapper:hover::after {
+    opacity: 1;
+}
+
+/* Overlay for headings */
+.about-news .img-wrapper h1, 
+.about-news .img-wrapper h2, 
+.about-news .img-wrapper h4, 
+.about-news .img-wrapper h5 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 10px; /* Adjust based on where you want the text */
+    left: 50%;
+    transform: translateX(-50%);
 }
