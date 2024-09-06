@@ -50,6 +50,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Paladins Condensed';
+    src: url('PaladinsCondensed.woff2') format('woff2'),
+        url('PaladinsCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 body, html {
     height: 100%;
@@ -307,7 +315,10 @@ h6 {
     font-family: 'Plain O Matic', sans-serif;
     margin: 1rem 0;
 }
-
+.h7{
+    font-family: 'Paladins Condensed';
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+}
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
     font-size: 10px;
