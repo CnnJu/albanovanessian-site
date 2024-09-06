@@ -339,6 +339,7 @@ h6 {
     font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
     letter-spacing: 0.2em;
     padding: 5px 10px;
+    margin-bottom: 10px;
 }
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
