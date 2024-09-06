@@ -395,6 +395,9 @@ ul {
     .left-column, .right-column {
         width: 100%;
     }
+    .funder-logo {
+        max-width: 100px;
+      }
 }
 
 @media (max-width: 720px) {
@@ -402,7 +405,23 @@ ul {
         display: none;
     }
 }
-/*project page*/
+
+.logofunding {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .funder-logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+/*all project page*/
 .project {
     position: relative;
     width: 100%;
