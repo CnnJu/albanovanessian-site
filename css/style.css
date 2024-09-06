@@ -145,7 +145,6 @@ header {
     font-family: "Anton", sans-serif; /* Apply Anton font */
 }
 
-
 #hamnav label, #hamburger {
     display: none; /* Hide hamburger button on larger screens */
 }
@@ -329,7 +328,7 @@ ul {
     padding: 0;
     margin: 0;
 }
-
+/*individual project pages*/
 .project-img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -403,6 +402,7 @@ ul {
         display: none;
     }
 }
+/*project page*/
 .project {
     position: relative;
     width: 100%;
@@ -416,7 +416,7 @@ ul {
     display: block;
 }
 
-.overlay {
+.project-img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -435,7 +435,7 @@ ul {
     transition: opacity 0.3s ease; 
 }
 
-.project:hover .overlay {
+.project:hover .project-img-overlay {
     opacity: 1;
 }
 
@@ -447,7 +447,7 @@ ul {
 
 .read-more {
     position: absolute;
-    bottom: 20px; /* Adjust the spacing from the bottom */
+    bottom: 20px;
     left: 50%; /* Center horizontally */
     transform: translateX(-50%);
     font-size: 1.25rem; 
@@ -462,19 +462,19 @@ ul {
 .about {
     max-width: 1200px;
     display: flex;
-    align-items: flex-start; /* Align items to the start of the cross-axis */
-    gap: 20px; /* Adjust spacing between image and text */
+    align-items: flex-start; 
+    gap: 20px;
 }
 
 #aboutprofilepicture {
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    flex-shrink: 0;
     max-width: 550px; 
     height: auto; 
 }
 
 .about p {
-    max-width: 600px; /* Limit the width of the paragraph for better readability */
-    line-height: 1.6; /* Improve readability with line spacing */
+    max-width: 600px;
+    line-height: 1.6;
 }
 .about-news {
     display: grid;
@@ -492,12 +492,8 @@ ul {
 .mosaic-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images fit nicely */
+    object-fit: cover; 
     transition: transform 0.3s ease;
-}
-
-.img-wrapper:hover .mosaic-img {
-    transform: scale(1.05); /* Zoom in on hover */
 }
 
 .img-wrapper::after {
@@ -525,7 +521,7 @@ ul {
     color: white;
     text-align: center;
     width: 100%;
-    bottom: 10px; /* Adjust based on where you want the text */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -544,21 +540,21 @@ ul {
 
 /* Custom positioning for each heading */
 .about-news .img-wrapper h1 {
-    top: 10px; /* Adjust as needed */
+    top: 10px;
 }
 
 .about-news .img-wrapper h2 {
-    top: 50px; /* Adjust as needed */
+    top: 50px;
 }
 
 .about-news .img-wrapper h3 {
-    bottom: 50px; /* Adjust as needed */
+    bottom: 50px;
 }
 
 .about-news .img-wrapper h4 {
-    bottom: 80px; /* Adjust as needed */
+    bottom: 80px;
 }
 
 .about-news .img-wrapper h5 {
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px;
 }
