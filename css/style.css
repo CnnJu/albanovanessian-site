@@ -35,8 +35,8 @@
 
 @font-face {
     font-family: 'Anton';
-    src: url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff2') format('woff2'),
-        url('/Users/jucanon/Desktop/Freelance/Alban Ovanessian/albanovanessian site/fonts/transfonter.org-20240905-081145/Anton-Regular.woff') format('woff');
+    src: url('Anton-Regular.woff2') format('woff2'),
+        url('Anton-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -293,6 +293,11 @@ h5 {
     margin-top: 0;
     margin-bottom: 0.1rem;
     letter-spacing: 0;
+}
+h6 {
+    color: black;
+    background-color: white;
+    font-family: 'Plain O Matic', sans-serif;
 }
 
 .subtitle {
