@@ -136,6 +136,8 @@ header {
 /* Regular navigation menu for larger screens */
 .nav-menu {
     display: block; /* Show navigation menu on larger screens */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 /* Styles for mobile screens */
@@ -176,7 +178,6 @@ header {
     .nav-menu {
         display: none; /* Hide the menu by default */
         position: absolute;
-        top: 100%; /* Position below the hamburger button */
         left: 0;
         right: 0;
         background-color: black; /* Background color for the menu */
