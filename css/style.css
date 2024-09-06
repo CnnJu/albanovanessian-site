@@ -295,6 +295,7 @@ h5 {
     letter-spacing: 0;
 }
 h6 {
+    font-size: 1em;
     color: black;
     background-color: white;
     font-family: 'Plain O Matic', sans-serif;
