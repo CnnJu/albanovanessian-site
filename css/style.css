@@ -357,10 +357,11 @@ img {
     justify-content: space-between;
     max-width: 1000px;
     align-items: center;
+    justify-content: center;
 }
 
 .left-column, .right-column {
-    width: 48%;
+    width: 44%;
 }
 
 ul {
