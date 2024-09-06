@@ -356,6 +356,7 @@ img {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
+    align-items: center;
 }
 
 .left-column, .right-column {
