@@ -78,6 +78,52 @@ a:hover {
     color: #c8aaff;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header-container {
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    height: auto;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-language-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 27px 15px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.header-language-options a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-language-options a:hover {
+    color: #c8aaff;
+}
+
 /* Base styles for larger screens */
 .hamburger-menu {
     display: none; /* Hide hamburger menu on larger screens */
