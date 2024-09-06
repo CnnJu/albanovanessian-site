@@ -108,7 +108,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 27px 15px;
+    padding: 20px 15px;
     display: flex;
     gap: 10px;
     z-index: 10;
