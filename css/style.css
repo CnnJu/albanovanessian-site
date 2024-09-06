@@ -390,16 +390,14 @@ ul {
 
 .project-support {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 25px;
     padding: 5px;
 }
 
-.support-center-column, .support-right-column {
+.support-left-column, .support-center-column, .support-right-column {
     display: flex;
     justify-content: center;
-    align-items: baseline;
 }
 
 .project-logo {
