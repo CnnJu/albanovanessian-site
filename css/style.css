@@ -78,105 +78,73 @@ a:hover {
     color: #c8aaff;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-.header-container {
-    position: relative;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    height: auto;
-}
-
-.header-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.header-language-options {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 27px 15px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.header-language-options a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.header-language-options a:hover {
-    color: #c8aaff;
-}
-
+/* Base styles for larger screens */
 .hamburger-menu {
-    display: none; /* Hide by default */
-    position: absolute;
-    left: 50%;
-    bottom: -50px; /* Position below the header image */
-    transform: translateX(-50%); /* Center horizontally */
-    width: 100%; /* Full width */
+    display: none; /* Hide hamburger menu on larger screens */
 }
 
 .hamburger {
-    display: none; /* Hide by default, show on smaller screens */
-    background: black;
-    border: none;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    left: 50%; /* Center horizontally */
-    bottom: 10px; /* Adjust the vertical position as needed */
-    transform: translateX(-50%); /* Center the button */
+    display: none; /* Hide hamburger button on larger screens */
 }
 
+/* Regular navigation menu for larger screens */
+.nav-menu {
+    display: block; /* Show navigation menu on larger screens */
+}
+
+/* Styles for mobile screens */
 @media (max-width: 768px) {
+    /* Hide regular language options on small screens */
     .header-language-options {
-        display: none; /* Hide language options on small screens */
+        display: none;
     }
 
+    /* Show hamburger menu and button on small screens */
     .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -50px; /* Adjust this based on your layout */
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: black; /* Background color for the mobile menu */
+        z-index: 10; /* Ensure it appears above other elements */
     }
 
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger button on small screens */
+        background: none;
+        border: none;
+        font-size: 2rem; /* Adjust size as needed */
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        padding: 0;
+        width: auto;
+        height: auto;
     }
 
     .nav-menu {
         display: none; /* Hide the menu by default */
         position: absolute;
+        top: 100%; /* Position below the hamburger button */
         left: 0;
         right: 0;
-        top: 0;
-        background-color: black; /* Background color to cover content */
+        background-color: black; /* Background color for the menu */
         overflow: hidden;
-        z-index: 9;
+        z-index: 9; /* Ensure it is below the hamburger button */
     }
 
     .nav-menu.active {
-        display: block; /* Show the menu when .active class is added */
+        display: block; /* Show the menu when the .active class is added */
     }
 
     .nav-menu .header-language-options {
-        display: flex; /* Show language options in the mobile menu */
-        padding: 15px; /* Adjust padding as needed */
+        display: flex; /* Show language options within the mobile menu */
+        padding: 15px;
     }
 
     nav ul {
@@ -212,7 +180,6 @@ nav {
 }
 
 .nav-menu {
-    display: block;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
