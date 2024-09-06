@@ -459,7 +459,6 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: flex-start; /* Align items to the start of the cross-axis */
