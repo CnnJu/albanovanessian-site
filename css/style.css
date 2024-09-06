@@ -397,7 +397,7 @@ ul {
 .support-center-column, .support-right-column {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .project-logo {
