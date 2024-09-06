@@ -53,12 +53,16 @@
 
 body, html {
     height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Console', sans-serif;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 body {
@@ -394,6 +398,9 @@ ul {
 @media (max-width: 600px) {
     .project-img {
         grid-template-columns: 1fr; /* Stack images vertically */
+    }
+    html, body {
+        padding: 0 10px;
     }
 }
 
