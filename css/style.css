@@ -188,6 +188,25 @@ header {
         border-top: 1px solid #333;
         box-sizing: border-box;
     }
+    .project-support {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+    .project-support img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .project-columns {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+    .funder-logo {
+        max-width: 100px;
+      }
 }
 
 .main-content {
@@ -303,7 +322,7 @@ h4 {
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
     margin-top: 0;
     margin-bottom: 0.1rem;
     letter-spacing: 0;
@@ -317,7 +336,9 @@ h6 {
 }
 .h7{
     font-family: 'Paladins Condensed';
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
+    letter-spacing: 0.2em;
+    padding: 5px 10px;
 }
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
@@ -402,19 +423,6 @@ ul {
     border: 0;
 }
 
-@media (max-width: 768px) {
-    .project-columns {
-        flex-direction: column;
-    }
-
-    .left-column, .right-column {
-        width: 100%;
-    }
-    .funder-logo {
-        max-width: 100px;
-      }
-}
-
 @media (max-width: 720px) {
     .footer-container {
         display: none;
@@ -429,7 +437,7 @@ ul {
     justify-content: space-between;
   }
   
-  .funder-logo {
+.funder-logo {
     max-width: 150px;
     width: 100%;
     height: auto;
