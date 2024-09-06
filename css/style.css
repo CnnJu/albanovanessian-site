@@ -102,7 +102,6 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    margin-right: auto;
 }
 
 .header-language-options {
@@ -129,8 +128,6 @@ header {
     width: 100%;
     max-width: 1200px;
     background: #000;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #hamitems {
