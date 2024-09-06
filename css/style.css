@@ -402,6 +402,7 @@ ul {
     justify-content: space-between;
     margin-bottom: 25px;
     padding: 5px;
+    max-width: 1000px;
 }
 
 .support-left-column, .support-center-column, .support-right-column {
