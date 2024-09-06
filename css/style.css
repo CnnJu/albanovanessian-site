@@ -379,9 +379,10 @@ ul {
     object-fit: cover;
 }
 
-.fundingplaces{
-    display: flex;
-    padding: 5px;
+.fundingplacessubtitle{
+    font-family: 'Commodore 64 Angled', sans-serif;
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 1.2rem);
+    letter-spacing: 0.2em;
 }
 @media (max-width: 600px) {
     .project-img {
