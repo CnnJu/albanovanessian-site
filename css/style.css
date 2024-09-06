@@ -258,7 +258,7 @@ h1 {
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     font-weight: 100;
     color: white;    
     font-family: poppins-extralight, poppins, sans-serif;
