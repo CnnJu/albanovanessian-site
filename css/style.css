@@ -140,12 +140,10 @@ header {
     color: white;
     text-decoration: none;
     text-align: center;
+    font-size: 1.5em;
     font-family: "Anton", sans-serif; /* Apply Anton font */
 }
 
-#hamitems a:hover {
-    background: #af0d0d;
-}
 
 #hamnav label, #hamburger {
     display: none; /* Hide hamburger button on larger screens */
@@ -160,7 +158,7 @@ header {
     #hamnav label {
         display: inline-block;
         color: white;
-        background: #a02620;
+        background: black;
         font-style: normal;
         font-size: 1.2em;
         padding: 10px;
