@@ -265,6 +265,8 @@ p {
     font-optical-sizing: auto;
     line-height: 2;
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
 
 h3 {
@@ -460,10 +462,12 @@ ul {
     font-family: 'Lucida Console', sans-serif;
     letter-spacing: 1px;
     word-spacing: 2px;
-    font-size: 1rem;
     line-height: 1.6;
     color: white;
     text-align: left;
+    font-optical-sizing: auto;
+    line-height: 2;
+    font-size: clamp(1.25rem, 2vw + 0.2rem, 1rem);
 }
 
 .about-news {
