@@ -405,6 +405,11 @@ ul {
     max-width: 1000px;
 }
 
+.supportfunding {
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
 .support-left-column, .support-center-column, .support-right-column {
     display: flex;
     justify-content: center;
