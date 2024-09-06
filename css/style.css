@@ -124,18 +124,13 @@ header {
     color: #c8aaff;
 }
 
-/* Base styles for larger screens */
-.hamburger-menu {
-    display: none; /* Hide by default */
+.hamburger {
+    display: none;
     position: absolute;
     left: 50%;
     bottom: -50px; /* Position below the header image */
     transform: translateX(-50%); /* Center horizontally */
-    width: 100%; /* Full width */
-}
-
-.hamburger {
-    display: none; /* Hide by default, show on smaller screens */
+    width: 100%;
 }
 
 @media (max-width: 768px) {
