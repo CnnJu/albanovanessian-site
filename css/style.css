@@ -641,4 +641,5 @@ ul {
     align-items: center;
     height: 100vh; /* Ensures full vertical height of the viewport */
     text-align: center; /* Centers the text horizontally */
+    margin-top: 50px;
 }
