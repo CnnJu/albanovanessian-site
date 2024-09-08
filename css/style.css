@@ -137,32 +137,43 @@ header {
 
 #hamitems {
     display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 
 #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 10px;
+    padding: 10px 0px;
     color: white;
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    font-family: "Anton", sans-serif; /* Apply Anton font */
+    font-family: "Anton", sans-serif;
     letter-spacing: 0.4em;
 }
 
 #hamitems a:hover {
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); /* Light shadow for white text */
+    color: #f44f21;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+#hamitems a:first-child {
+    justify-content: flex-start;
+}
+
+#hamitems a:last-child {
+    justify-content: flex-end;
 }
 
 #hamnav label, #hamburger {
-    display: none; /* Hide hamburger button on larger screens */
+    display: none;
 }
 
 /* Responsive styles for small screens */
 @media screen and (max-width: 768px) {
     .header-language-options {
-        display: none; /* Hide language options on small screens */
+        display: none;
     }
 
     #hamnav label {
