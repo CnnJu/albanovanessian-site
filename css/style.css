@@ -254,19 +254,8 @@ footer {
     text-align: center;
 }
 
-.footer-column.contact {
-    text-align: left;
-    font-family: "Anton", sans-serif;
-}
-
-.footer-column a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.footer-column a:hover {
-    color: #f44f21;
+.footer-container img {
+    max-width: 32px;
 }
 
 .search input[type="text"] {
