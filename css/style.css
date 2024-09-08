@@ -587,59 +587,12 @@ ul {
     opacity: 1;
 }
 
-/* Overlay for headings */
-.about-news .img-wrapper h1, 
-.about-news .img-wrapper h2, 
-.about-news .img-wrapper h4, 
-.about-news .img-wrapper h5 {
-    position: absolute;
-    color: white;
-    text-align: center;
-    width: 100%;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.about-news .img-wrapper h1, 
-.about-news .img-wrapper h2, 
-.about-news .img-wrapper h3, 
-.about-news .img-wrapper h4, 
-.about-news .img-wrapper h5 {
-    position: absolute;
-    color: white;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-/* Custom positioning for each heading */
-.about-news .img-wrapper h1 {
-    top: 10px;
-}
-
-.about-news .img-wrapper h2 {
-    top: 50px;
-}
-
-.about-news .img-wrapper h3 {
-    bottom: 50px;
-}
-
-.about-news .img-wrapper h4 {
-    bottom: 80px;
-}
-
-.about-news .img-wrapper h5 {
-    bottom: 10px;
-}
-
+/* Contact page */
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensures full vertical height of the viewport */
-    text-align: center; /* Centers the text horizontally */
-    margin-top: 50px;
+    height: 100vh;
+    text-align: center;
 }
