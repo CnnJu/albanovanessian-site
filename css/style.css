@@ -216,7 +216,7 @@ a:hover {
     
     .project-support img {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 80px;
     }
     .project-columns {
         flex-direction: column;
@@ -327,7 +327,7 @@ p {
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 h3 {
@@ -399,7 +399,7 @@ img {
     max-width: 1000px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .left-column, .right-column {
@@ -416,8 +416,8 @@ ul {
     max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 5px;
-    margin: 10px 0px 20px 0px;
+    grid-gap: 15px;
+    margin: 10px 0px 80px 0px;
 }
 
 .project-img img {
@@ -451,6 +451,8 @@ ul {
 
 .supportfunding {
     max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 }
 
@@ -471,7 +473,7 @@ ul {
     overflow: hidden;
     max-width: 100%;
     background: #000;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .video-container iframe {
@@ -517,7 +519,7 @@ ul {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .project-img-overlay {
