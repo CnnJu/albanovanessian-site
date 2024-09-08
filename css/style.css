@@ -220,7 +220,6 @@ a:hover {
     }
     .project-columns {
         flex-direction: column;
-        margin-bottom: 50px;
     }
 
     .left-column, .right-column {
@@ -400,6 +399,7 @@ img {
     max-width: 1000px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .left-column, .right-column {
@@ -413,6 +413,7 @@ ul {
 }
 /*individual project pages*/
 .project-img {
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 5px;
@@ -421,7 +422,6 @@ ul {
 
 .project-img img {
     width: 100%;
-    max-width: 1400px;
     height: auto;
     object-fit: cover;
 }
