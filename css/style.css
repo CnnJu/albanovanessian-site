@@ -220,6 +220,7 @@ a:hover {
     }
     .project-columns {
         flex-direction: column;
+        margin-bottom: 50px;
     }
 
     .left-column, .right-column {
