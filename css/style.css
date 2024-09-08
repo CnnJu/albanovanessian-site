@@ -118,18 +118,16 @@ header {
     top: 0;
     right: 0;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     z-index: 10;
 }
 
 #hamitems .lang-option{
-    font-size: 0.4rem;
+    font-size: 1rem;
     font-family: 'Republica Minor', sans-serif;
 
 }
-.header-language-options a:hover {
-    color: #f44f21;
-}
+
 
 #hamnav {
     width: 100%;
