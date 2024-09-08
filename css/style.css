@@ -275,7 +275,16 @@ footer {
 }
 
 .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
     margin-bottom: 80px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .photographer-name {
     position: absolute;
