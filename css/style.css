@@ -172,7 +172,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 985px) {
     #hamnav label {
         display: inline-block;
         color: white;
