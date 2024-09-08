@@ -114,7 +114,6 @@ header {
 }
 
 .header-language-options {
-    font-family: 'Lucida Console', sans-serif;
     position: absolute;
     top: 0;
     right: 0;
@@ -123,12 +122,7 @@ header {
     z-index: 10;
 }
 
-/*.header-language-options a {
-    color: white;
-    text-decoration: none;
-}*/
-
-.lang-option{
+#hamitems .lang-option{
     font-size: 0.4rem;
     font-family: 'Republica Minor', sans-serif;
 
