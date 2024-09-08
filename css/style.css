@@ -396,9 +396,8 @@ img {
 .project-columns {
     display: flex;
     justify-content: space-between;
-    max-width: 1000px;
-    align-items: center;
-    justify-content: center;
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
