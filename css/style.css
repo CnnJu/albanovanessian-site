@@ -83,7 +83,7 @@ a {
 }
 
 a:hover {
-    color: #c8aaff;
+    color: #f44f21;
 }
 
 .container {
@@ -113,10 +113,25 @@ header {
     display: block;
 }
 
-.lang-option a {
+.header-language-options {
+    font-family: 'Lucida Console', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.header-language-options a {
     font-family: 'Republica Minor', sans-serif;
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.7rem;
+}
+
+.header-language-options a:hover {
+    color: #f44f21;
 }
 
 #hamnav {
@@ -137,8 +152,8 @@ header {
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 0.4em;
+    font-family: "Anton", sans-serif; /* Apply Anton font */
+    letter-spacing: 0.5em;
 }
 
 #hamitems a:hover {
@@ -243,7 +258,7 @@ footer {
 }
 
 .footer-column a:hover {
-    color: #c8aaff;
+    color: #f44f21;
 }
 
 .search input[type="text"] {
