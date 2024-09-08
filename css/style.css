@@ -67,7 +67,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -88,7 +88,7 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -96,6 +96,7 @@ a:hover {
 
 .header-container {
     position: relative;
+    margin-bottom: 15px;
 }
 
 header {
@@ -134,7 +135,7 @@ header {
 
 #hamnav {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     background: #000;
 }
 
@@ -210,7 +211,7 @@ header {
 }
 
 .main-content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -227,7 +228,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -445,7 +446,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -518,7 +519,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -538,7 +539,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
