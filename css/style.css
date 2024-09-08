@@ -113,24 +113,10 @@ header {
     display: block;
 }
 
-.header-language-options {
-    font-family: 'Lucida Console', sans-serif;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.header-language-options a {
-    color: white;
+.lang-option a {
+    font-family: 'Republica Minor', sans-serif;
     text-decoration: none;
     font-size: 1rem;
-}
-
-.header-language-options a:hover {
-    color: #c8aaff;
 }
 
 #hamnav {
@@ -151,7 +137,12 @@ header {
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    font-family: "Anton", sans-serif; /* Apply Anton font */
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.4em;
+}
+
+#hamitems a:hover {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3); /* Light shadow for white text */
 }
 
 #hamnav label, #hamburger {
