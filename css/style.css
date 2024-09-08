@@ -103,6 +103,7 @@ a:hover {
 .header-image {
     display: block;
     margin-left: auto;
+    margin-top: 20px;
     margin-right: auto;
     width: 50%;
 }
