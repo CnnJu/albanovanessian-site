@@ -127,7 +127,7 @@ header {
     font-family: 'Republica Minor', sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.4rem;
 }
 
 .header-language-options a:hover {
@@ -153,7 +153,7 @@ header {
     text-align: center;
     font-size: 1.5em;
     font-family: "Anton", sans-serif; /* Apply Anton font */
-    letter-spacing: 0.5em;
+    letter-spacing: 0.4em;
 }
 
 #hamitems a:hover {
