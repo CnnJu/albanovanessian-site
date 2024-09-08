@@ -384,8 +384,7 @@ h6 {
     margin-bottom: 10px;
 }
 .subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: 'DS-Digital', sans-serif;
     font-size: 10px;
     letter-spacing: 0.2em;
 }
@@ -434,8 +433,9 @@ ul {
 }
 
 .fundingplacessubtitle{
-    font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.5rem, 2vw + 0.2rem, 1rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: clamp(0.3rem, 2vw + 0.2rem, 0.7rem);
     letter-spacing: 0.2em;
 }
 
