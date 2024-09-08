@@ -407,7 +407,7 @@ img {
 
 .project-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 100%;
     height: auto;
     margin-left: auto;
