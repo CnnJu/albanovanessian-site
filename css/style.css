@@ -633,3 +633,12 @@ ul {
 .about-news .img-wrapper h5 {
     bottom: 10px;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full vertical height of the viewport */
+    text-align: center; /* Centers the text horizontally */
+}
