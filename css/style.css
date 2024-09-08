@@ -471,6 +471,7 @@ ul {
     overflow: hidden;
     max-width: 100%;
     background: #000;
+    margin-bottom: 30px;
 }
 
 .video-container iframe {
@@ -516,6 +517,7 @@ ul {
     width: 100%;
     height: auto;
     display: block;
+    margin-bottom: 50px;
 }
 
 .project-img-overlay {
