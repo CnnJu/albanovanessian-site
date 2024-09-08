@@ -350,7 +350,7 @@ p {
     font-weight: bold;
     color: black;
     background-color: #edecec;
-    padding: 10px 20px;
+    padding: 0px;
     width: 100%;
     box-sizing: border-box;
 }
