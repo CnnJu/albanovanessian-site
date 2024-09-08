@@ -123,13 +123,16 @@ header {
     z-index: 10;
 }
 
-.header-language-options a {
-    font-family: 'Republica Minor', sans-serif;
+/*.header-language-options a {
     color: white;
     text-decoration: none;
-    font-size: 0.4rem;
-}
+}*/
 
+.lang-option{
+    font-size: 0.4rem;
+    font-family: 'Republica Minor', sans-serif;
+
+}
 .header-language-options a:hover {
     color: #f44f21;
 }
