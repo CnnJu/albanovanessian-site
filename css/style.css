@@ -256,6 +256,7 @@ footer {
 
 .footer-container img {
     max-width: 32px;
+    opacity: 50%;
 }
 
 .search input[type="text"] {
