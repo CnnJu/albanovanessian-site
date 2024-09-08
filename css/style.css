@@ -292,7 +292,7 @@ footer {
     opacity: 1;
 }
 
-h1, h2, h3, p, .project-img-main, .project-img img {
+h1, h2, h3, p, {
     width: 100%; /* Ensure full width within the container */
     max-width: 100%; /* Prevent overflow */
 }
@@ -327,6 +327,7 @@ p {
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
     letter-spacing: 1px;
     word-spacing: 2px;
+    margin-bottom: 50px;
 }
 
 h3 {
@@ -414,11 +415,12 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 5px;
-    margin-top: 10px;
+    margin: 10px 0px 20px 0px;
 }
 
 .project-img img {
     width: 100%;
+    max-width: 1400px;
     height: auto;
     object-fit: cover;
 }
