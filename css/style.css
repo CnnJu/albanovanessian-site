@@ -155,7 +155,8 @@ header {
 
 #hamitems a:hover {
     color: #f44f21;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), /* Dark shadow for depth */
+                 -1px -1px 2px rgba(255, 255, 255, 0.2);
 }
 
 #hamitems a:first-child {
