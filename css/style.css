@@ -111,7 +111,7 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .header-language-options {
