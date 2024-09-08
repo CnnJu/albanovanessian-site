@@ -58,6 +58,17 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('helvetica-webfont.eot');
+    src: url('helvetica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('helvetica-webfont.woff') format('woff'),
+         url('helvetica-webfont.ttf') format('truetype'),
+         url('helvetica-webfont.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body, html {
     height: 100%;
@@ -96,7 +107,7 @@ a:hover {
 
 .header-container {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 75px;
 }
 
 
@@ -263,6 +274,24 @@ footer {
     color: white;
 }
 
+.photographer-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .photographer-name {
+    opacity: 1;
+}
+
 h1, h2, h3, p, .project-img-main, .project-img img {
     width: 100%; /* Ensure full width within the container */
     max-width: 100%; /* Prevent overflow */
@@ -308,6 +337,17 @@ h3 {
     font-weight: bold;
     color: black;
     background-color: #edecec;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#supportheading h3 {
+    font-family: 'Republica Minor', sans-serif;
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 1.5rem);
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    color: white;
     padding: 10px 20px;
     width: 100%;
     box-sizing: border-box;
@@ -388,6 +428,7 @@ ul {
     font-size: clamp(0.5rem, 2vw + 0.2rem, 1rem);
     letter-spacing: 0.2em;
 }
+
 @media (max-width: 600px) {
     .project-img {
         grid-template-columns: 1fr; /* Stack images vertically */
@@ -510,6 +551,7 @@ ul {
     transform: translateX(-50%);
     font-size: 1.25rem; 
     color: white;
+    font-family: 'helveticaregular', sans-serif;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
