@@ -644,9 +644,8 @@ ul {
 .image-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Sets the max width for the wrapper */
-    margin: 0 auto; /* Centers the image wrapper */
-}
+    max-width: 1000px;
+    margin: 0 auto; 
 
 .contact-image {
     width: 100%;
@@ -662,9 +661,9 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Makes the .contact div cover the entire image */
+    height: 100%; 
     text-align: center;
-    color: white; /* Text color for better contrast against the image */
+    color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: translucent background for readability */
     padding: 20px;
 }
