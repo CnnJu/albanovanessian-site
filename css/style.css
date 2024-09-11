@@ -307,8 +307,8 @@ footer {
 }
 
 h1, h2, h3, p {
-    width: 100%; /* Ensure full width within the container */
-    max-width: 100%; /* Prevent overflow */
+    width: 100%; 
+    max-width: 100%;
 }
 
 h1, h2, h3, ul, p {
@@ -317,9 +317,9 @@ h1, h2, h3, ul, p {
 
 h1 {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset position to truly center */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     font-size: 4rem;
     font-family: "Anton", sans-serif;
     text-align: center;
