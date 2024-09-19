@@ -161,13 +161,13 @@ a:hover {
 #hamitems {
     display: flex;
     justify-content: space-between;
+    padding: 0;
     align-items: center;
 }
 
 #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 10px 0px;
     color: white;
     text-decoration: none;
     text-align: center;
