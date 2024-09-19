@@ -159,7 +159,7 @@ a:hover {
     text-align: center;
     font-size: 1em;
     font-family: "Anton", sans-serif;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.2em;
 }
 
 #hamitems a:hover {
@@ -240,43 +240,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-footer {
-    background-color: black;
-    margin-top: auto;
-    font-family: "Anton", sans-serif;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    
-}
-
-.footer-column {
-    flex: 1;
-    text-align: center;
-}
-
-.footer-container img {
-    max-width: 32px;
-    opacity: 50%;
-}
-
-.search input[type="text"] {
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-}
-
 .image-container {
     position: relative;
     display: inline-block;
@@ -291,14 +254,16 @@ footer {
 }
 .photographer-name {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
     right: 0;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: white;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
