@@ -121,8 +121,8 @@ a:hover {
 }
 
 .header-social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
 }
 
 .header-image {
@@ -144,7 +144,7 @@ a:hover {
 }
 
 #hamitems .lang-option{
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family: 'Republica Minor', sans-serif;
     letter-spacing: 0rem;
     text-align: right;
