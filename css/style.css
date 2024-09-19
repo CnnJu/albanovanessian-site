@@ -78,7 +78,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -101,7 +101,7 @@ a:hover {
 
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -131,7 +131,7 @@ a:hover {
 }
 
 #hamitems .lang-option{
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-family: 'Republica Minor', sans-serif;
 
 }
@@ -139,7 +139,7 @@ a:hover {
 
 #hamnav {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     background: #000;
 }
 
@@ -164,7 +164,7 @@ a:hover {
 #hamitems a:hover {
     color: #f44f21;
     text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5), 
-                2px -2px 0 rgba(255, 255, 255, 0.9);
+                1px -1px 0 rgba(255, 255, 255, 0.6);
 }
 
 #hamitems a:first-child {
@@ -233,7 +233,7 @@ a:hover {
 }
 
 .main-content {
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -250,7 +250,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -428,7 +428,7 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1600px;
+    max-width: 1800px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 15px;
@@ -513,7 +513,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -588,7 +588,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1600px;
+    max-width: 1800px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -608,7 +608,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -646,6 +646,7 @@ ul {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto; 
+}
 
 .contact-image {
     width: 100%;
