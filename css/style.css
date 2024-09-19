@@ -129,8 +129,9 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-top: 20px;
+    margin-bottom: 50px;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
 }
 
 .header-language-options {
