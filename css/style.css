@@ -131,8 +131,9 @@ a:hover {
 }
 
 #hamitems .lang-option{
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-family: 'Republica Minor', sans-serif;
+    letter-spacing: 0rem;
 
 }
 
@@ -156,7 +157,7 @@ a:hover {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "Anton", sans-serif;
     letter-spacing: 0.4em;
 }
