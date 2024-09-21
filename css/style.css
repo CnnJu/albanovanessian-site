@@ -69,6 +69,23 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'Planet Kosmos';
+    src: url('PlanetKosmos.woff2') format('woff2'),
+        url('PlanetKosmos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Blackheat';
+    src: url('Blackheat.woff2') format('woff2'),
+        url('Blackheat.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 body, html {
     height: 100%;
@@ -130,7 +147,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-right: auto;
     width: 75%;
 }
@@ -236,7 +253,7 @@ a:hover {
     
     .project-support img {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
     .project-columns {
         flex-direction: column;
@@ -261,7 +278,7 @@ a:hover {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .image-container img {
@@ -273,8 +290,6 @@ a:hover {
     position: absolute;
     bottom: 5px;
     right: 5px;
-    right: 0;
-    top: 0;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: white;
     padding: 5px;
@@ -304,17 +319,24 @@ h1 {
     left: 50%; 
     transform: translate(-50%, -50%); 
     font-size: 4rem;
-    font-family: "Anton", sans-serif;
+    font-family: Helvetica, sans-serif;
     text-align: center;
     font-weight: 400;
     z-index: 10;
 }
 
-h2{
+h2 {
+    font-family: 'Impact', sans-serif;
+    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
+
+}
+
+h3{
     font-family: 'Plain O Matic'; 
     font-size: clamp(0.5rem, 2vw + 0.5rem, 1rem);
     font-weight: 100;
 }
+
 p {
     text-align: justify;
     font-weight: 100;   
@@ -324,7 +346,7 @@ p {
     font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .headingbackground {
@@ -338,24 +360,25 @@ p {
     padding: 0px;
     width: 100%;
     box-sizing: border-box;
+    margin-left: 5px;
 }
 .supportheading {
     font-family: 'Republica Minor', sans-serif;
-    font-size: clamp(0.5rem, 2vw + 0.5rem, 1.5rem);
+    font-size: clamp(0.3rem, 2vw + 0.5rem, 0.8rem);
     text-transform: uppercase;
     text-align: left;
     font-weight: bold;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 20px 0px 0px;
     width: 100%;
     box-sizing: border-box;
 }
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
+    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
     font-weight: 100;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
     letter-spacing: 0.5em;
 }
 
@@ -378,7 +401,7 @@ h6 {
     font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
     letter-spacing: 0.2em;
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
@@ -397,11 +420,11 @@ img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .left-column, .right-column {
-    width: 44%;
+    width: 50%;
 }
 
 ul {
@@ -430,10 +453,11 @@ ul {
 }
 
 .fundingplacessubtitle{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 100;
     font-size: clamp(0.3rem, 2vw + 0.2rem, 0.7rem);
     letter-spacing: 0.2em;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -457,7 +481,7 @@ ul {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .support-left-column, .support-center-column, .support-right-column {
@@ -477,7 +501,7 @@ ul {
     overflow: hidden;
     max-width: 100%;
     background: #000;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .video-container iframe {
@@ -500,7 +524,7 @@ ul {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   
 .funder-logo {
@@ -523,7 +547,7 @@ ul {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .project-img-overlay {
@@ -579,12 +603,12 @@ ul {
 
 #aboutprofilepicture {
     flex-shrink: 0;
-    max-width: 250px; 
+    max-width: 900px; 
     height: auto; 
 }
 
 .about p {
-    max-width: 1100px;
+    max-width: 900px;
     line-height: 1.6;
 }
 .about-news {
@@ -634,6 +658,7 @@ ul {
 .contact-image {
     width: 100%;
     height: auto;
+    display: flex;
 }
 
 .contact {
