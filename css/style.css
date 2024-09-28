@@ -395,13 +395,13 @@ h5 {
     letter-spacing: 0.2em;
 }
 .support-h5 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
+    font-family: Impact, sans-serif;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
     letter-spacing: 0.2em;
 }
 .subtitle-support-h5 {
     font-family: Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
     letter-spacing: 0.2em;
 }
 
