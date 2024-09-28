@@ -333,7 +333,7 @@ h1 {
     font-weight: 400;
     z-index: 10;
 }
-h1 .individual-project-h1 {
+.individual-project-h1 {
     font-size: 4rem;
     font-family: Helvetica, sans-serif;
     text-align: center;
