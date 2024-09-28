@@ -333,12 +333,13 @@ h1 {
     font-weight: 400;
     z-index: 10;
 }
-.individual-project-h1 {
+h1 .individual-project-h1 {
     font-size: 4rem;
     font-family: Helvetica, sans-serif;
     text-align: center;
     font-weight: 400;
 }
+
 h2 {
     font-family: 'Impact', sans-serif;
     font-size: clamp(0.9rem, 2vw + 0.2rem, 1.2rem);
