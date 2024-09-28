@@ -85,6 +85,15 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Hero Worship';
+    src: url('HeroWorship.woff2') format('woff2'),
+        url('HeroWorship.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 body, html {
@@ -295,7 +304,7 @@ a:hover {
     padding: 5px;
     text-align: center;
     font-size: 12px;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Hero Worship';
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
