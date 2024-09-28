@@ -234,7 +234,7 @@ a:hover {
 }
 /* Responsive styles for small screens */
 @media screen and (max-width: 768px) {
-    .header-language-options {
+    .header-language-options, .header-social-icons {
         display: none;
     }
 
@@ -324,7 +324,12 @@ h1 {
     font-weight: 400;
     z-index: 10;
 }
-
+.individual-project-h1 {
+    font-size: 4rem;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
 h2 {
     font-family: 'Impact', sans-serif;
     font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
@@ -360,7 +365,7 @@ p {
     padding: 0px;
     width: 100%;
     box-sizing: border-box;
-    margin-left: 5px;
+    padding-left: 5px;
 }
 .supportheading {
     font-family: 'Republica Minor', sans-serif;
@@ -389,12 +394,23 @@ h5 {
     margin-bottom: 0.3rem;
     letter-spacing: 0.2em;
 }
+.support-h5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
+    letter-spacing: 0.2em;
+}
+.subtitle-support-h5 {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+
 h6 {
     font-size: 1.5em;
     color: black;
     background-color: white;
     font-family: 'Plain O Matic', sans-serif;
-    margin: 1rem 0;
+    padding: 1rem;
 }
 .h7{
     font-family: 'Paladins Condensed';
@@ -418,9 +434,8 @@ img {
     justify-content: space-evenly;
     max-width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 100px;
+    padding-left: 5px;
 }
 
 .left-column, .right-column {
@@ -649,6 +664,7 @@ ul {
 
 /* Contact page */
 .image-wrapper {
+    display: flex;
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -656,7 +672,7 @@ ul {
 }
 
 .contact-image {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
 }
