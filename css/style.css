@@ -332,7 +332,7 @@ h1 {
 }
 h2 {
     font-family: 'Impact', sans-serif;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.2rem);
 
 }
 
@@ -416,7 +416,7 @@ h6 {
     font-family: 'Paladins Condensed';
     font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
     letter-spacing: 0.2em;
-    padding: 5px 10px;
+    padding: 0;
     margin-bottom: 15px;
 }
 .subtitle {
