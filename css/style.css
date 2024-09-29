@@ -23,7 +23,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Republica Minor';
     src: url('RepublicaMinorRegular.woff2') format('woff2'),
@@ -338,6 +337,7 @@ h1 {
     font-family: Helvetica, sans-serif;
     text-align: center;
     font-weight: 400;
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -379,7 +379,7 @@ p {
 }
 .supportheading {
     font-family: 'Republica Minor', sans-serif;
-    font-size: clamp(0.3rem, 2vw + 0.5rem, 0.8rem);
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 1rem);
     text-transform: uppercase;
     text-align: left;
     font-weight: bold;
@@ -391,17 +391,17 @@ p {
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
     font-weight: 100;
     margin-bottom: 10px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.6em;
 }
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     letter-spacing: 0.2em;
 }
 .support-h5 {
@@ -560,6 +560,20 @@ ul {
     object-fit: contain;
   }
 
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 33%;
+}
+
+.image-link-support {
+    max-width: 20px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
 /*all project page*/
 .project {
     position: relative;
@@ -642,11 +656,6 @@ ul {
     gap: 10px;
     max-width: 1800px;
     margin: 0 auto;
-}
-
-.img-wrapper {
-    position: relative;
-    overflow: hidden;
 }
 
 .mosaic-img {
