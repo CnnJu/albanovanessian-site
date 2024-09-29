@@ -563,8 +563,7 @@ ul {
 
 .link-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 33%;
 }
 
@@ -573,6 +572,7 @@ ul {
     height: auto;
     object-fit: contain;
     margin-right: 10px;
+    margin-bottom: 50px;
 }
 .websites-link {
     font-family: "Jockey One", sans-serif;
@@ -580,10 +580,10 @@ ul {
     font-style: normal;
     font-optical-sizing: auto;
     line-height: 2;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
     letter-spacing: 1px;
     word-spacing: 2px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 /*all project page*/
 .project {
