@@ -563,7 +563,7 @@ ul {
 
 .link-container {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     max-width: 33%;
 }
 
@@ -571,7 +571,8 @@ ul {
     max-width: 20px;
     height: auto;
     object-fit: contain;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 0;
     margin-bottom: 50px;
 }
 .websites-link {
@@ -584,6 +585,7 @@ ul {
     letter-spacing: 1px;
     word-spacing: 2px;
     margin-bottom: 50px;
+    margin-left: 0;
 }
 /*all project page*/
 .project {
