@@ -763,11 +763,11 @@ ul {
     background-color: #edecec;
     padding: 0px 5px;
     box-sizing: border-box;
+    margin-top: 40px;
 }
 .contact-paragraph {
     font-family: 'Commodore 64 Angled', sans-serif;
     font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
     margin-top: 0;
-    margin-bottom: 50px;
     letter-spacing: 0.2em;
 }
