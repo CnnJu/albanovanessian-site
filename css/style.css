@@ -277,7 +277,8 @@ img {
     .project-support {
         flex-direction: column;
         align-items: flex-start;
-      }
+
+    }
     
     .project-support img {
         width: 100%;
@@ -527,7 +528,6 @@ ul {
     justify-content: space-around;
     margin-bottom: 25px;
     padding: 0;
-    max-width: 1000px;
 }
 
 .support-left-column, .support-center-column, .support-right-column {
