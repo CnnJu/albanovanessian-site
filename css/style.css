@@ -530,9 +530,9 @@ ul {
     padding: 0;
 }
 
-.support-left-column, .support-center-column, .support-right-column {
-    text-align: center;
-}
+/*.support-left-column, .support-center-column, .support-right-column {
+    
+}*/
 
 .project-logo {
     width: 100px;
