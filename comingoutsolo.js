@@ -16,27 +16,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (container) {
         uniqueImages.forEach(src => {
+            const imgWrapper = document.createElement('div');
+            imgWrapper.classList.add('vignette-effect'); // Add vignette class to wrapper
+
             const img = document.createElement('img');
             img.src = src;
-            container.appendChild(img);
+
+            imgWrapper.appendChild(img); // Append image inside the wrapper
+            container.appendChild(imgWrapper); // Append wrapper to container
         });
     } else {
         console.log("No .project-img element found on this page.");
     }
 
+    // Logos array for funding organizations
     const logos = [
         'img/logosfunding/parts.webp',
         'img/logosfunding/GXII Festival.webp',
         'img/logosfunding/pianofabriek.webp',
         'img/logosfunding/kunstenwerkplaats.webp'
-      ];
+    ];
       
-      const logoContainer = document.querySelector('.logofunding');
-      logos.forEach(logo => {
-        const img = document.createElement('img');
-        img.src = logo;
-        img.alt = 'Funder Logo';
-        img.classList.add('funder-logo');
-        logoContainer.appendChild(img);
-      });
+    const logoContainer = document.querySelector('.logofunding');
+    if (logoContainer) {
+        logos.forEach(logo => {
+            const img = document.createElement('img');
+            img.src = logo;
+            img.alt = 'Funder Logo';
+            img.classList.add('funder-logo');
+            logoContainer.appendChild(img);
+        });
+    } else {
+        console.log("No .logofunding element found on this page.");
+    }
 });
