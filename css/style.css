@@ -416,6 +416,7 @@ p {
     padding: 10px 20px 0px 0px;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
 }
 .supportfunding {
     font-family: 'Commodore 64 Angled', sans-serif;
@@ -423,6 +424,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 h4 {
@@ -432,6 +434,7 @@ h4 {
     margin-bottom: 20px;
     margin-top: 40px;
     letter-spacing: 0.6em;
+    text-transform: uppercase;
 }
 
 h5 {
@@ -440,16 +443,20 @@ h5 {
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 .support-h5 {
     font-family: Impact, sans-serif;
     font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
     letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
+
 .subtitle-support-h5 {
     font-family: Helvetica, sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
     letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 h6 {
