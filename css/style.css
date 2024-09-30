@@ -531,8 +531,7 @@ ul {
 }
 
 .support-left-column, .support-center-column, .support-right-column {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .project-logo {
