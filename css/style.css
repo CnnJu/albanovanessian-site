@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
     font-family: 'DS-Digital';
     src: url('DS-Digital.woff2') format('woff2'),
@@ -113,12 +114,12 @@ body {
 a {
     color: white;
     text-decoration: none;
-    transition: text-shadow 0.3s ease-in-out;
+    transition: text-shadow 0.2s ease-in-out;
 }
 
 a:hover {
     color: #f44f21;
-    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 img {
@@ -252,7 +253,7 @@ img {
         display: none;
         flex-direction: column;
         width: 100%;
-        background: black; /* Ensure the menu has a background */
+        background: black;
         z-index: 9;
     }
 }
@@ -294,7 +295,7 @@ img {
 .main-content {
     max-width: 1800px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -310,6 +311,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 .photographer-name {
     position: absolute;
     bottom: 5px;
@@ -328,13 +330,9 @@ img {
     opacity: 1;
 }
 
-h1, h2, h3, p {
-    width: 100%; 
-    max-width: 100%;
-}
-
-h1, h2, h3, ul, p {
-    color: white;
+h1, h2, h3, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
+.contact-heading {
+    text-transform: uppercase;
 }
 
 h1 {
@@ -502,7 +500,7 @@ ul {
     height: auto;
 }
 
-.fundingplacessubtitle{
+.fundingplacessubtitle {
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
     font-size: clamp(0.3rem, 2vw + 0.2rem, 0.7rem);
