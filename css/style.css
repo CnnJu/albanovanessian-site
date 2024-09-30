@@ -431,7 +431,7 @@ h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.7rem);
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     letter-spacing: 0.2em;
 }
 .support-h5 {
