@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Project image array
     const images = [
-        'img/project/comingoutsolo/imgarray1.webp',
-        'img/project/comingoutsolo/imgarray2.webp',
-        'img/project/comingoutsolo/imgarray3.webp',
-        'img/project/comingoutsolo/imgarray4.webp',
-        'img/project/comingoutsolo/imgarray5.webp',
-        'img/project/comingoutsolo/imgarray6.webp'
+        'img/project/queerhub/1imgarray.jpg',
+        'img/project/queerhub/2imgarray.jpg',
+        'img/project/queerhub/3imgarray.jpg',
+        'img/project/queerhub/4imgarray.jpg',
+        'img/project/queerhub/5imgarray.jpg',
+        'img/project/queerhub/6imgarray.jpg',
+        'img/project/queerhub/7imgarray.jpg',
+        'img/project/queerhub/8imgarray.jpg'
     ];
 
     const uniqueImages = [...new Set(images)]; // Ensure all images are unique
@@ -28,14 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log("No .project-img element found on this page.");
     }
-
-    // Logos array for funding organizations
-    const logos = [
-        'img/logosfunding/parts.webp',
-        'img/logosfunding/GXII Festival.webp',
-        'img/logosfunding/pianofabriek.webp',
-        'img/logosfunding/kunstenwerkplaats.webp'
-    ];
       
     const logoContainer = document.querySelector('.logofunding');
     if (logoContainer) {
