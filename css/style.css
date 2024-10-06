@@ -369,7 +369,7 @@ img:hover::before {
     opacity: 1;
 }
 
-h1, h2, h3, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
+h1, h2, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
 .contact-heading {
     text-transform: uppercase;
 }
