@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const img = document.createElement('img');
             img.src = src;
 
-            imgWrapper.appendChild(img); // Append image inside the wrapper
-            container.appendChild(imgWrapper); // Append wrapper to container
+            imgWrapper.appendChild(img); 
+            container.appendChild(imgWrapper); 
         });
     } else {
         console.log("No .project-img element found on this page.");
