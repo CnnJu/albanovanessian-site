@@ -466,6 +466,7 @@ h5 {
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
+    line-height: 0.1em;
 }
 .support-h5 {
     font-family: Impact, sans-serif;
@@ -495,7 +496,7 @@ h6 {
 }
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.2em;
 }
 
