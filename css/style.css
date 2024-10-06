@@ -160,7 +160,6 @@ img:hover::before {
     z-index:5;
     height:100%;
     width:100%;
-    /* http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+50,0.5+100 */
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -174,7 +173,6 @@ img:hover::before {
     z-index:5;
     height:100%;
     width:100%;
-    /* http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+50,0.5+100 */
     background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
