@@ -266,14 +266,6 @@ img:hover::before {
     letter-spacing: 0.2em;
 }
 
-#hamitems a:first-child {
-    justify-content: flex-start;
-}
-
-#hamitems a:last-child {
-    justify-content: flex-end;
-}
-
 #hamnav label, #hamburger {
     display: none;
 }
