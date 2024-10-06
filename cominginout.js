@@ -1,14 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Project image array
     const images = [
-        'img/project/queerhub/1imgarray.jpg',
-        'img/project/queerhub/2imgarray.jpg',
-        'img/project/queerhub/3imgarray.jpg',
-        'img/project/queerhub/4imgarray.jpg',
-        'img/project/queerhub/5imgarray.jpg',
-        'img/project/queerhub/6imgarray.jpg',
-        'img/project/queerhub/7imgarray.jpg',
-        'img/project/queerhub/8imgarray.jpg'
+        'img/project/comingout/1imgarray.webp',
+        'img/project/comingout/2imgarray.webp',
+        'img/project/comingout/3imgarray.webp',
+        'img/project/comingout/4imgarray.webp',
+        'img/project/comingout/5imgarray.webp',
+        'img/project/comingout/6imgarray.webp',
+        'img/project/comingout/7imgarray.webp',
+        'img/project/comingout/8imgarray.webp',
+        'img/project/comingout/9imgarray.webp',
+        'img/project/comingout/10imgarray.webp',
+        'img/project/comingout/11imgarray.webp',
+        'img/project/comingout/12imgarray.png'
     ];
 
     const uniqueImages = [...new Set(images)]; // Ensure all images are unique
@@ -29,6 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log("No .project-img element found on this page.");
     }
+
+    // Logos array for funding organizations
+    const logos = [
+        'img/logosfunding/parts.webp',
+        'img/logosfunding/GXII Festival.webp',
+        'img/logosfunding/pinkscreens.webp'
+    ];
       
     const logoContainer = document.querySelector('.logofunding');
     if (logoContainer) {
