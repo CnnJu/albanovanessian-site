@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (container) {
         uniqueImages.forEach(src => {
             const imgWrapper = document.createElement('div');
-            imgWrapper.classList.add('vignette-effect'); // Add vignette class to wrapper
 
             const img = document.createElement('img');
             img.src = src;

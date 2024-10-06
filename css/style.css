@@ -152,42 +152,6 @@ img::before {
 img:hover::before {
     opacity: 1;
 }
-
-#vignette-effect {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-}
-  
-#vignette-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.1) 70%);
-    pointer-events: none;
-}
-
-.vignette-effect {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-}
-  
-.vignette-effect::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
-    pointer-events: none;
-}
   
 .container {
     width: 100%;
