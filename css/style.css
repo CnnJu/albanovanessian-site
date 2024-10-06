@@ -213,8 +213,8 @@ img:hover::before {
 }
 
 .header-social-icons img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .header-image {
@@ -238,7 +238,7 @@ img:hover::before {
 }
 
 #hamitems .lang-option{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: 'Republica Minor', sans-serif;
     letter-spacing: 0rem;
     text-align: right;
@@ -256,13 +256,15 @@ img:hover::before {
     justify-content: space-between;
     padding: 0;
     align-items: center;
+    border-left: 0.5px solid white;
+  border-right: 0.5px solid white;
 }
 
 #hamitems a {
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: "Anton", sans-serif;
     letter-spacing: 0.2em;
 }
