@@ -131,7 +131,7 @@ a {
 
 a:hover {
     color: #f44f21;
-    text-shadow: 1px 1px rgba(120, 120, 120);
+    text-shadow: 0.5px 0.5px rgba(120, 120, 120);
 }
 
 img {
@@ -178,7 +178,7 @@ img:hover::before {
 
 .header-image {
     display: block;
-    margin-left: auto;
+    margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-right: auto;
