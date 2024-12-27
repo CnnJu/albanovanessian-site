@@ -458,16 +458,6 @@ h6 {
     position: relative;
 }
 
-h6::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Set width to 100% of the viewport width */
-    height: 100%;
-    background-color: white;
-    z-index: -1; /* Place it behind the text */
-    transform: translateX(-50vw + 50%);
 }
 .h7 {
     font-family: 'Paladins Condensed';
