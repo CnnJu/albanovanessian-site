@@ -101,7 +101,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -155,7 +155,7 @@ img:hover::before {
   
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -211,7 +211,7 @@ img:hover::before {
 
 #hamnav {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     background: #000;
 }
 
@@ -290,7 +290,7 @@ img:hover::before {
 }
 
 .main-content {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -451,6 +451,14 @@ h6 {
     font-family: 'Plain O Matic', sans-serif;
     font-weight: 100;
     letter-spacing: 0.4em;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 .h7 {
     font-family: 'Paladins Condensed';
@@ -489,7 +497,7 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1600px;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 15px;
@@ -556,7 +564,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -658,7 +666,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1600px;
+    max-width: 1500px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -729,7 +737,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
