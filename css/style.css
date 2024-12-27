@@ -451,14 +451,11 @@ h6 {
     font-family: 'Plain O Matic', sans-serif;
     font-weight: 100;
     letter-spacing: 0.4em;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    width: calc(100% + 30px); /* Adjust width to account for padding */
+    margin-left: -15px; /* Offset margin to align with paragraph */
     padding: 0 15px;
     box-sizing: border-box;
+    text-align: left; /* Align text to the left */
 }
 .h7 {
     font-family: 'Paladins Condensed';
