@@ -101,7 +101,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -155,7 +155,7 @@ img:hover::before {
   
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -211,7 +211,7 @@ img:hover::before {
 
 #hamnav {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1800px;
     background: #000;
 }
 
@@ -458,7 +458,6 @@ h6 {
     position: relative;
 }
 
-}
 .h7 {
     font-family: 'Paladins Condensed';
     font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
