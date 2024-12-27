@@ -451,11 +451,23 @@ h6 {
     font-family: 'Plain O Matic', sans-serif;
     font-weight: 100;
     letter-spacing: 0.4em;
-    width: calc(100% + 30px); /* Adjust width to account for padding */
-    margin-left: -15px; /* Offset margin to align with paragraph */
+    width: 100%; /* Set width to 100% of the parent container */
     padding: 0 15px;
     box-sizing: border-box;
     text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+h6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: 100%;
+    background-color: white;
+    z-index: -1; /* Place it behind the text */
+    transform: translateX(-50vw + 50%);
 }
 .h7 {
     font-family: 'Paladins Condensed';
