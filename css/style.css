@@ -727,11 +727,24 @@ ul {
 
 /*index page*/
 .index-image {
-    width: 33.33%;
+    width: 30%;
     height: auto;
     display: inline-block;
     margin-bottom: 75px;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .index-image {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .index-image {
+        display: none;
+    }
 }
 
 .index-news {
