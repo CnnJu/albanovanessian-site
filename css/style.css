@@ -613,41 +613,6 @@ ul {
     display: block;
     margin-bottom: 75px;
 }
-.mosaic {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-}
-
-.mosaic-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.mosaic-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.mosaic-item:hover img {
-    transform: scale(1.1);
-}
-
-.mosaic-item::after {
-    content: '';
-    display: block;
-    padding-bottom: calc(100% * var(--aspect-ratio, 1));
-}
-
-.mosaic-item:nth-child(2n) {
-    grid-column: span 2;
-}
-
-.mosaic-item:nth-child(3n) {
-    grid-row: span 2;
-}
 
 .project-img-overlay {
     position: absolute;
