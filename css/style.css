@@ -445,7 +445,7 @@ h6 {
     background-color: white;
     font-family: 'Plain O Matic', sans-serif;
     font-weight: 100;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     width: 100%; /* Set width to 100% of the parent container */
     padding: 0 25px;
     box-sizing: border-box;
@@ -461,7 +461,7 @@ h6 {
     margin-bottom: 15px;
 }
 .subtitle {
-    font-family: 'DS-Digital', sans-serif;
+    font-family: 'Commodore 64 Angled', sans-serif;
     font-size: 12px;
     letter-spacing: 0.2em;
 }
@@ -726,6 +726,13 @@ ul {
 }
 
 /*index page*/
+.index-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
 .index-news {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
