@@ -736,7 +736,7 @@ ul {
 
 @media screen and (max-width: 768px) {
     .index-image {
-        width: 100%;
+        width: 50%;
         margin-bottom: 50px;
     }
 }
