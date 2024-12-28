@@ -59,7 +59,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'helveticaregular';
+    font-family: 'HelveticaRegular';
     src: url('helvetica-webfont.eot');
     src: url('helvetica-webfont.eot?#iefix') format('embedded-opentype'),
          url('helvetica-webfont.woff') format('woff'),
@@ -653,11 +653,12 @@ ul {
     transform: translateX(-50%);
     font-size: 1.25rem; 
     color: white;
-    font-family: 'helveticaregular', sans-serif;
+    font-family: 'HelveticaRegular', sans-serif;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
+    z-index: 2; /* Ensure it is above the overlay */
 }
 
 /* 'about' page specifics */
