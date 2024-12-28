@@ -736,13 +736,6 @@ ul {
 
 @media screen and (max-width: 768px) {
     .index-image {
-        width: 50%;
-        margin-bottom: 50px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .index-image {
         display: none;
     }
 }
