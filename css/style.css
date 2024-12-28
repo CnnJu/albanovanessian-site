@@ -291,11 +291,16 @@ img:hover::before {
     box-sizing: border-box;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin-bottom: 75px;
 }
 
 .image-container img {
