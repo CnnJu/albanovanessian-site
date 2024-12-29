@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'img/project/comingout/5imgarray.webp',
         'img/project/comingout/6imgarray.webp',
         'img/project/comingout/7imgarray.webp',
-        'img/project/comingout/8imgarray.webp',
         'img/project/comingout/9imgarray.webp',
         'img/project/comingout/10imgarray.webp',
         'img/project/comingout/11imgarray.webp',
-        'img/project/comingout/12imgarray.png'
     ];
 
     const uniqueImages = [...new Set(images)]; // Ensure all images are unique
@@ -29,28 +27,33 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log("No .project-img element found on this page.");
     }
+    // Split images into two arrays each with four images
+    const firstSixImages = uniqueImages.slice(0, 6);
+    const lastTwoImages = uniqueImages.slice(6, 8);
 
-    // news image array
-    const entries = [
-        {
-            src: 'img/project/breakintwo/IMG_7834_2_PNG.webp',
-            h1: 'Title 1',
-            h2: 'Subtitle 1',
-            h3: '',
-            h4: '',
-            h5: 'Additional Info 1'
-        },
-        {
-            src: 'img/project/breakintwo/IMG_7827_PNG.webp',
-            h1: 'Title 2',
-            h2: '',
-            h3: 'Subtitle 2',
-            h4: '',
-            h5: ''
-        },
-        // Add other entries as needed
-    ];
+    // Create containers for the two sets of images
+    const firstContainer = document.querySelector('.first-six-images');
+    const secondContainer = document.querySelector('.last-two-images');
 
+    if (firstContainer) {
+        firstSixImages.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            firstContainer.appendChild(img);
+        });
+    } else {
+        console.log("No .first-six-images element found on this page.");
+    }
+
+    if (secondContainer) {
+        lastTwoImages.forEach(src => {
+            const img = document.createElement('img');
+            img.src = src;
+            secondContainer.appendChild(img);
+        });
+    } else {
+        console.log("No .last-two-images element found on this page.");
+    }
     // Logos array for funding organizations
     const logos = [
         'img/logosfunding/parts.webp',

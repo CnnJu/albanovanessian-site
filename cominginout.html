@@ -14,16 +14,18 @@
         <style>
             .cominginout-project {
                 font-family: Helvetica, sans-serif;
-                font-size: clamp(2.6rem, 2vw + 0.2rem, 2.8rem);
-                letter-spacing: 0.6em;
+                font-size: clamp(6rem, 2vw + 0.2rem, 6.2rem);
+                letter-spacing: 0em;
+                font-weight: 500;
+                text-transform: uppercase;
                 text-align: center;
-                margin: 50px 0;
             }
             .cominginout-project-subtitle {
                 font-family: Helvetica, sans-serif;
-                font-size: 2em;
-                letter-spacing: 0.6em;
-                text-align: center;
+                font-weight: 300;
+                font-size: clamp(2rem, 2vw + 0.2rem, 2.2rem);
+                letter-spacing: 0em;
+                text-transform: none;
             }
         </style>
     </head>
@@ -79,11 +81,6 @@
                     <h3 class="headingbackground">CRÉDITS ET MENTIONS</h3>
                     <div class="project-columns">
                         <div class="left-column">
-                            <div class="image-container">
-                                <img src="img/project/queerhub/img3-leftcolumn.webp" alt="main project img" class="project-img-main">
-                            </div>
-                        </div>
-                        <div class="left-column">
                             <ul>
                                 <li>
                                     <h4>videographe - éditeurice/</h4>
@@ -111,7 +108,7 @@
                         </div>
                         <div class="right-column">
                             <div class="video-container">
-                                <iframe width="560" height="315" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/mMOat068y2E?si=VSv_qL7xODun1rZL" title="YouTube video player" frameborder="0" controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                             <ul>
                                 <li>
@@ -127,30 +124,33 @@
                         </div>
                     </div>
                     <div class="marginbottomdiv">
-                        <h4 class="supportheading">SOUTENU PAR/</h4>
-                        <div class="supportfunding">
-                            <h5 class="supportfunding">heima arts residency<span class="fundingplacessubtitle">seydisfjordur, islande</span></h5>
-                            <h5 class="supportfunding">MUNICIPALITÉ DE MÚLAÞING<span class="fundingplacessubtitle">seydisfjordur, islande</span></h5>
-                        </div>
-                    </div>
-                    <div class="marginbottomdiv">
                         <div class="image-container">
-                            <img src="img/project/comingoutsolo/thirdimgwide.webp" alt="main project img" class="project-img-main">
-                            <div class="photographer-name"><p class="photographer-name">Matias Battallé</p></div>
+                            <img src="img/project/comingout/8imgarray.webp" alt="main project img" class="project-img-main">
                         </div>
                         <div class="project-img">
                             <!-- Images are dynamically inserted via JavaScript -->
-                        </div>  
+                        </div>
+                        <div class="image-container">
+                            <img src="img/project/comingout/12imgarray.png" alt="main project img" class="project-img-main">
+                        </div>
                     </div>
                     <div class="marginbottomdiv">
                         <h3 class="headingbackground">EXPOSITIONS</h3>
                         <div class="project-support">
                             <div class="support-left-column"><a target="_blank" href="https://www.parts.be/">
                                 <div class="h7">02-13/07/2019</div>
-                                <h5 class="support-h5">GXII PARTS FESTIVAL<span class="subtitle-support-h5">P.A.R.T.S/BRUSSELS,BELGIQUE</span></h5>
+                                <h5 class="support-h5">GXII PARTS FESTIVAL<span class="subtitle-support-h5">P.A.R.T.S/BRUxelles,BELGIQUE</span></h5>
                                 <div class="link-container">
                                     <img src="img/arrow.png" class="image-link-support">
                                     <div class="websites-link">www.parts.be</div>
+                                </div>
+                            </a></div>
+                            <div class="support-right-column"><a target="_blank" href="https://pinkscreens.org">
+                                <div class="h7">06-10/11/2019</div>
+                                <h5 class="support-h5">PINKSCREENS, BRUSSELS QUEER FILM FESTIVAL<span class="subtitle-support-h5">BRUXelles,BELGIQUE</span></h5>
+                                <div class="link-container">
+                                    <img src="img/arrow.png" class="image-link-support">
+                                    <div class="websites-link">https://pinkscreens.org</div>
                                 </div>
                             </a></div>
                         </div>
@@ -162,42 +162,5 @@
             </div> 
         </main>             
         <script src="cominginout.js"></script> 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // Make sure to define the container
-                const container = document.querySelector('.project-img');
-
-                if (container) {
-                    uniqueImages.forEach(src => {
-                        const img = document.createElement('img');
-                        img.src = src;
-                        container.appendChild(img);
-                    });
-                } else {
-                    console.log("No .project-img element found on this page.");
-                }
-
-                // news image array
-                const entries = [
-                    {
-                        src: 'img/project/breakintwo/IMG_7834_2_PNG.webp',
-                        h1: 'Title 1',
-                        h2: 'Subtitle 1',
-                        h3: '',
-                        h4: '',
-                        h5: 'Additional Info 1'
-                    },
-                    {
-                        src: 'img/project/breakintwo/IMG_7827_PNG.webp',
-                        h1: 'Title 2',
-                        h2: '',
-                        h3: 'Subtitle 2',
-                        h4: '',
-                        h5: ''
-                    },
-                    // Add other entries as needed
-                ];
-            });
-        </script>
     </body>
 </html>
