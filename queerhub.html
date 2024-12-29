@@ -121,8 +121,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="marginbottomdiv">
-                        <iframe class="youtubevideos" width="1000" height="500" src="https://www.youtube.com/embed/A-ORenYiUE0?si=uJGnXE8Sm_1ycRWT" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video-container">
+                        <iframe class="youtubevideos" width="1000" height="500" src="https://www.youtube.com/embed/A-ORenYiUE0?si=uJGnXE8Sm_1ycRWT" controls="0" frameborder="0" allow="autoplay; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="marginbottomdiv">
                         <h4 class="supportheading">SOUTENU PAR/</h4>
@@ -163,42 +163,5 @@
             </div> 
         </main>             
         <script src="queerhub.js"></script> 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // Make sure to define the container
-                const container = document.querySelector('.project-img');
-
-                if (container) {
-                    uniqueImages.forEach(src => {
-                        const img = document.createElement('img');
-                        img.src = src;
-                        container.appendChild(img);
-                    });
-                } else {
-                    console.log("No .project-img element found on this page.");
-                }
-
-                // news image array
-                const entries = [
-                    {
-                        src: 'img/project/breakintwo/IMG_7834_2_PNG.webp',
-                        h1: 'Title 1',
-                        h2: 'Subtitle 1',
-                        h3: '',
-                        h4: '',
-                        h5: 'Additional Info 1'
-                    },
-                    {
-                        src: 'img/project/breakintwo/IMG_7827_PNG.webp',
-                        h1: 'Title 2',
-                        h2: '',
-                        h3: 'Subtitle 2',
-                        h4: '',
-                        h5: ''
-                    },
-                    // Add other entries as needed
-                ];
-            });
-        </script>
     </body>
 </html>
