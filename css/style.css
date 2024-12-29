@@ -425,13 +425,13 @@ h4 {
     font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
     font-weight: 100;
     margin-bottom: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
     letter-spacing: 0.4em;
 }
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
+    font-size: clamp(0.4rem, 2vw + 0.2rem, 0.6rem);
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
