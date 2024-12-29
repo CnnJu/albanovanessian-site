@@ -105,9 +105,8 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 30px 0 25px;
     box-sizing: border-box;
 }
 
@@ -119,7 +118,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -168,24 +167,29 @@ img:hover::before {
   
 .container {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .header-container {
     position: relative;
     margin-bottom: 75px;
-    max-width: 1500px;
+    max-width: 1400px;
 }
 
 .header-image {
     display: block;
-    margin-left: 10px;
     margin-top: 20px;
-    margin-bottom: 30px;
-    margin-right: auto;
+    margin-bottom: 20px;
     width: 80%;
 }
 
@@ -195,7 +199,7 @@ img:hover::before {
     right: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 40px;
     gap: 5px;
     z-index: 10;
 }
@@ -289,9 +293,8 @@ img:hover::before {
 }
 
 .main-content {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
 }
 
@@ -497,7 +500,7 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1500px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0;
@@ -564,7 +567,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -665,7 +668,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1500px;
+    max-width: 1400px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -750,7 +753,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
