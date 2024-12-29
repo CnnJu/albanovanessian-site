@@ -6,7 +6,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Plain O Matic';
     src: url('PlainOMatic.woff2') format('woff2'),
@@ -15,7 +14,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Commodore 64 Angled';
     src: url('Commodore64Angled.woff2') format('woff2'),
@@ -32,7 +30,6 @@
     font-style: italic;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Anton';
     src: url('Anton-Regular.woff2') format('woff2'),
@@ -41,7 +38,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Lucida Console';
     src: url('LucidaConsole.woff2') format('woff2'),
@@ -93,6 +89,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Alien Encounters';
+    src: url('AlienEncountersBoldItalic.woff2') format('woff2'),
+        url('AlienEncountersBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 body, html {
     height: 100%;
@@ -101,9 +105,8 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 30px 0 25px;
     box-sizing: border-box;
 }
 
@@ -115,13 +118,13 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 
 .marginbottomdiv {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
 }
 a {
     color: white;
@@ -164,24 +167,29 @@ img:hover::before {
   
 .container {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .header-container {
     position: relative;
     margin-bottom: 75px;
-    max-width: 1500px;
+    max-width: 1400px;
 }
 
 .header-image {
     display: block;
-    margin-left: 10px;
     margin-top: 20px;
-    margin-bottom: 30px;
-    margin-right: auto;
+    margin-bottom: 20px;
     width: 80%;
 }
 
@@ -191,7 +199,7 @@ img:hover::before {
     right: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 40px;
     gap: 5px;
     z-index: 10;
 }
@@ -285,9 +293,8 @@ img:hover::before {
 }
 
 .main-content {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
 }
 
@@ -368,7 +375,7 @@ img:hover::before {
 h1, h2, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
 .contact-heading {
     text-transform: uppercase;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 h1 {
@@ -376,10 +383,10 @@ h1 {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    font-size: clamp(4rem, 2vw + 0.2rem, 5rem);
+    font-size: clamp(4rem, 2vw + 1rem, 5rem);
     font-family: Helvetica, sans-serif;
     text-align: center;
-    font-weight: 400;
+    font-weight: 100;
     z-index: 10;
 }
 .individual-project-h1 {
@@ -451,16 +458,15 @@ p {
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
-    font-weight: 100;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    letter-spacing: 0.4em;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
+    margin-bottom: 10px;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
 }
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
+    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
@@ -468,14 +474,16 @@ h5 {
 }
 .support-h5 {
     font-family: Impact, sans-serif;
-    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
-    letter-spacing: 0.2em;
+    font-size: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
+    letter-spacing: 0.1em;
+    padding-right: 0px;
 }
 
 .subtitle-support-h5 {
     font-family: Helvetica, sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    padding-left: 0px;
 }
 
 h6 {
@@ -500,8 +508,8 @@ h6 {
     margin-bottom: 15px;
 }
 .subtitle {
-    font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: 12px;
+    font-family: 'DS-Digital', sans-serif;
+    font-size: clamp(0.4rem, 2vw + 0.2rem, 0.6rem);
     letter-spacing: 0.2em;
 }
 
@@ -529,11 +537,11 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1500px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0;
-    margin: 10px 0px 80px 0px;
+    margin: 0;
 }
 
 .project-img img {
@@ -596,7 +604,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -697,7 +705,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1500px;
+    max-width: 1400px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -782,7 +790,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
