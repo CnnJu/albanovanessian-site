@@ -431,7 +431,7 @@ h4 {
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.4rem, 2vw + 0.2rem, 0.6rem);
+    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
@@ -474,7 +474,7 @@ h6 {
 }
 .subtitle {
     font-family: 'DS-Digital', sans-serif;
-    font-size: 12px;
+    font-size: clamp(0.4rem, 2vw + 0.2rem, 0.6rem);
     letter-spacing: 0.2em;
 }
 
