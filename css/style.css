@@ -93,6 +93,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Alien Encounters';
+    src: url('AlienEncountersBoldItalic.woff2') format('woff2'),
+        url('AlienEncountersBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 body, html {
     height: 100%;
@@ -414,16 +422,16 @@ p {
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
+    font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 40px;
     letter-spacing: 0.4em;
 }
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
+    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
