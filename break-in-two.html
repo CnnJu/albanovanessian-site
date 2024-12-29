@@ -15,7 +15,7 @@
             .breakintwo {
                 font-family: 'Helvetica', sans-serif;
                 text-align: center;
-                font-size: clamp(5rem, 2vw + 0.2rem, 5.2rem);
+                font-size: clamp(3rem, 2vw + 0.2rem, 3.2rem);
                 text-transform: lowercase;
                 margin-bottom: 80px;
             }
@@ -47,7 +47,7 @@
         <main>
             <div class="main-content">
                 <div class="image-container">
-                    <img src="img/project/breakintwo/breakintwo1.webp" alt="main project img" class="project-img-main">
+                    <img src="img/project/breakintwo/breakintwo2.webp" alt="main project img" class="project-img-main">
                     <div class="photographer-name"><p class="photographer-name">Matias Battallé</p></div>
                 </div>
                 <div class="breakintwo">break.in.two</div>
@@ -94,8 +94,9 @@
                     <div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/OpmPb1HV6Rs?si=Fzkzgo2zYvPZz7Gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="project-img">
-                        <!-- Images are dynamically inserted-->
+                    <div class="image-container">
+                        <img src="img/project/breakintwo/breakintwo3.webp" alt="main project img" class="project-img-main">
+                        <div class="photographer-name"><p class="photographer-name">#</p></div>
                     </div>
                     <h3 class="headingbackground">RÉSIDENCE</h3>
                     <div class="h7">01 - 31/05/2019</div>
@@ -111,43 +112,6 @@
                 </div>
             </div>
         </main>   
-        <script src="breakintwo.js"></script> 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                // Make sure to define the container
-                const container = document.querySelector('.project-img');
-
-                if (container) {
-                    uniqueImages.forEach(src => {
-                        const img = document.createElement('img');
-                        img.src = src;
-                        container.appendChild(img);
-                    });
-                } else {
-                    console.log("No .project-img element found on this page.");
-                }
-
-                // news image array
-                const entries = [
-                    {
-                        src: 'img/project/breakintwo/IMG_7834_2_PNG.webp',
-                        h1: 'Title 1',
-                        h2: 'Subtitle 1',
-                        h3: '',
-                        h4: '',
-                        h5: 'Additional Info 1'
-                    },
-                    {
-                        src: 'img/project/breakintwo/IMG_7827_PNG.webp',
-                        h1: 'Title 2',
-                        h2: '',
-                        h3: 'Subtitle 2',
-                        h4: '',
-                        h5: ''
-                    },
-                    // Add other entries as needed
-                ];
-            });
-        </script>
+        <script src="breakintwo.js"></script>
 </body>
 </html>
