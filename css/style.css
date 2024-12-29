@@ -105,7 +105,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -118,7 +118,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -293,16 +293,53 @@ header {
 }
 
 .main-content {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.projects-grid {
+/* .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 0px;
+} */
+
+.projects-grid {
+    width: 1500px;
+    max-width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /* grid-auto-rows: 1fr; */
+    grid-auto-flow: row dense;
+    grid-gap: 0;
+    counter-reset: boxes;
+  }
+
+.tall {
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 1000px;
+    width: 500px;
 }
+
+.wide {
+    grid-row: span 1;
+    grid-column: span 2;
+    height: 500px;
+    width: 1000px;
+}
+
+.square {
+    grid-row: span 1;
+    grid-column: span 1;
+    height: 500px;
+    width: 500px;
+}
+
+.box {
+    position: relative;
+      }
 
 .image-container {
     position: relative;
@@ -338,7 +375,7 @@ header {
 h1, h2, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
 .contact-heading {
     text-transform: uppercase;
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 h1 {
@@ -346,10 +383,10 @@ h1 {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    font-size: clamp(4rem, 2vw + 1rem, 5rem);
+    font-size: clamp(4rem, 2vw + 0.2rem, 5rem);
     font-family: Helvetica, sans-serif;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
     z-index: 10;
 }
 .individual-project-h1 {
@@ -421,15 +458,16 @@ p {
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
-    margin-bottom: 10px;
-    margin-top: 30px;
-    letter-spacing: 0.2em;
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    letter-spacing: 0.4em;
 }
 
 h5 {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
     margin-top: 0;
     margin-bottom: 5px;
     letter-spacing: 0.2em;
@@ -437,16 +475,14 @@ h5 {
 }
 .support-h5 {
     font-family: Impact, sans-serif;
-    font-size: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
-    letter-spacing: 0.1em;
-    padding-right: 0px;
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
+    letter-spacing: 0.2em;
 }
 
 .subtitle-support-h5 {
     font-family: Helvetica, sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
-    letter-spacing: 0.1em;
-    padding-left: 0px;
+    letter-spacing: 0.2em;
 }
 
 h6 {
@@ -471,8 +507,8 @@ h6 {
     margin-bottom: 15px;
 }
 .subtitle {
-    font-family: 'DS-Digital', sans-serif;
-    font-size: clamp(0.4rem, 2vw + 0.2rem, 0.6rem);
+    font-family: 'Commodore 64 Angled', sans-serif;
+    font-size: 12px;
     letter-spacing: 0.2em;
 }
 
@@ -500,11 +536,11 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1400px;
+    max-width: 1500px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0;
-    margin: 0;
+    margin: 10px 0px 80px 0px;
 }
 
 .project-img img {
@@ -567,7 +603,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -613,8 +649,8 @@ ul {
 .project {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 ;
 }
 
 .project-image {
@@ -634,13 +670,13 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
     text-align: center;
     padding: 20px; 
     box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s ease; 
-    z-index: 1; /* Ensure it overlays above other elements */
+    z-index: 1; 
 }
 
 .project:hover .project-img-overlay {
@@ -668,7 +704,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1400px;
+    max-width: 1500px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -753,7 +789,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
