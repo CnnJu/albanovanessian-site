@@ -26,9 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
       
     const logos = [
-        { src: 'img/logo1.png', alt: 'Logo 1' },
-        { src: 'img/logo2.png', alt: 'Logo 2' },
-        { src: 'img/logo3.png', alt: 'Logo 3' }
+        { src: 'img/logosfunding/norrdans_logo.png', alt: 'Logo 1' }
     ];
 
     const logoContainer = document.querySelector('.logofunding');
