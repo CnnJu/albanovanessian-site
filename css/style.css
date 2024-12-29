@@ -422,11 +422,11 @@ p {
 
 h4 {
     font-family: 'Plain O Matic', sans-serif;
-    font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
     font-weight: 100;
     margin-bottom: 15px;
-    margin-top: 30px;
-    letter-spacing: 0.4em;
+    margin-top: 20px;
+    letter-spacing: 0.1em;
 }
 
 h5 {
