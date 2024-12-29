@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Project image array
     const images = [
-        'img/project/rosasvartstation/rosasvart2.JPG',
-        'img/project/rosasvartstation/rosasvart3.jpg',
-        'img/project/rosasvartstation/rosasvart4.jpg',
-        'img/project/rosasvartstation/rosasvart5.jpg'
+        'img/project/inthroughwater/inthrough_5.jpg',   
+        'img/project/inthroughwater/inthrough_6.jpg',
+        'img/project/inthroughwater/inthrough_7.jpg',
+        'img/project/inthroughwater/inthrough_8.jpg',
     ];
 
     const uniqueImages = [...new Set(images)]; // Ensure all images are unique
