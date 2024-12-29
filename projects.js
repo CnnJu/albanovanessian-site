@@ -21,7 +21,7 @@ const projects = [
     description: "En Lire Plus",
   },
   {
-    link: "comingoutsolo.html",
+    link: "cominginout.html",
     title: "COMING in out (vidéo installation)",
     year: "2019",
     image: "img/project/projects/comingoutvideo",
