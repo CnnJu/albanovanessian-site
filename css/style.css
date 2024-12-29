@@ -439,14 +439,15 @@ h5 {
 }
 .support-h5 {
     font-family: Impact, sans-serif;
-    font-size: clamp(1rem, 2vw + 0.2rem, 1.2rem);
-    letter-spacing: 0.2em;
+    font-size: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
+    letter-spacing: 0.1em;
+    padding-right: 0px;
 }
 
 .subtitle-support-h5 {
     font-family: Helvetica, sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 h6 {
