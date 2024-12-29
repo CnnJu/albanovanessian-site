@@ -96,8 +96,7 @@
 
 body, html {
     height: 100%;
-    /* background-color: black; */
-    background-color: red;
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
@@ -314,30 +313,26 @@ img:hover::before {
     grid-column: span 1;
     grid-row: span 2;
     height: 1000px;
+    width: 500px;
 }
 
 .wide {
     grid-row: span 1;
     grid-column: span 2;
     height: 500px;
-
+    width: 1000px;
 }
 
 .square {
     grid-row: span 1;
     grid-column: span 1;
     height: 500px;
+    width: 500px;
 }
 
 .box {
     position: relative;
-    color: rgba(255,255,255,.7);
-    font-size: 2rem;
-    font-family: sans-serif;
-    counter-increment: boxes;
-    
-
-  }
+      }
 
 .image-container {
     position: relative;
@@ -647,7 +642,7 @@ ul {
 .project {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 ;
 }
 
