@@ -339,7 +339,7 @@ img:hover::before {
 h1, h2, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
 .contact-heading {
     text-transform: uppercase;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 h1 {
