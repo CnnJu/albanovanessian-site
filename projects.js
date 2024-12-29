@@ -91,7 +91,7 @@ projects.forEach((project) => {
         </div>
         <div class="project-img-overlay">
           <h1 class="projects-page-title">${project.title}</h1>
-          <h5>${project.year}</h5>
+          <h5 class="year">${project.year}</h5>
           <h5 class="read-more">${project.description}</h5>
         </div>
       </a>
