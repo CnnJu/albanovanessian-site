@@ -448,6 +448,7 @@ h5 {
     font-family: Helvetica, sans-serif;
     font-size: clamp(0.5rem, 2vw + 0.2rem, 0.6rem);
     letter-spacing: 0.1em;
+    padding-left: 0px;
 }
 
 h6 {
