@@ -182,7 +182,7 @@ header {
 
 .header-container {
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     max-width: 1400px;
 }
 
@@ -345,6 +345,8 @@ header {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    margin-bottom: 80px;
+
 }
 
 .image-container img {
