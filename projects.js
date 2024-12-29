@@ -3,47 +3,46 @@ const projects = [
     link: "queerhub.html",
     title: "Queerhub",
     year: "2022",
-    image: "img/project/queerhub/2imgarray.jpg",
+    image: "img/project/projects/queerhub_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "break-in-two.html",
     title: "break.in.two",
     year: "2019",
-    image:
-      "img/project/breakintwo/ec5757_0ef46567457a4cdda646b6636a05430d~mv2 (1).webp",
+    image: "img/project/projects/breakintwo_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "comingoutsolo.html",
     title: "COMING in out (solo)",
     year: "2019",
-    image: "img/project/comingoutsolo/thirdimgwide.webp",
+    image: "img/project/projects/breakintwo_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "comingoutsolo.html",
     title: "COMING in out (vidéo installation)",
     year: "2019",
-    image: "img/project/comingout/1img.webp",
+    image: "img/project/projects/comingoutvideo_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "rosasvartstation.html",
     title: "ROSA.SVART.STATION",
     year: "2020",
-    image: "img/project/rosasvartstation/rosasvart1.JPG",
+    image: "img/project/projects/rosasvart_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "inthroughwater.html",
@@ -51,17 +50,17 @@ const projects = [
     year: "2022",
     video: "https://www.youtube.com/embed/HxSUWAqFGuI?si=Msy_7Q46oWm64jsO",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
   {
     link: "griefhub.html",
     title: "GriefHub",
     year: "2020",
-    image: "img/project/griefhub/GriefHub-logo.png",
+    image: "img/project/projects/GriefHub_square_500X500.jpg",
     description: "En Lire Plus",
-    height: 315,
-    width: 560,
+    height: 500,
+    width: 500,
   },
 ];
 
@@ -70,6 +69,8 @@ const projectsGrid = document.getElementById("projects-grid");
 projects.forEach((project) => {
   const projectDiv = document.createElement("div");
   projectDiv.classList.add("project");
+  projectDiv.classList.add("box");
+  projectDiv.classList.add("square");
 
   const projectContent = `
       <a href="${project.link}" class="project-link">
