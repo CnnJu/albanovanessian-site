@@ -432,7 +432,7 @@ p {
     font-weight: bold;
     color: black;
     background-color: #edecec;
-    padding: 0px;
+    padding: 0px 15px;
     width: 100%; /* Set width to 100% of the parent container */
     box-sizing: border-box;
     padding-left: 5px;
@@ -516,6 +516,7 @@ h6 {
 }
 
 .subtitle-index {
+    font-family: 'DS-Digital', sans-serif;
     font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
 }
 
