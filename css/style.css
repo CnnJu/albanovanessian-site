@@ -781,22 +781,21 @@ ul {
 }
 .contact-paragraph {
     font-family: 'Commodore 64 Angled', sans-serif;
-    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
+    font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
     margin-top: 0;
     letter-spacing: 0.2em;
 }
 
-.prod-columns-left, .prod-columns-right {
-    width: 50%;
+.prod-column-left, .prod-column-right {
+    width: 60%;
     gap: 10px;
 }
 
 .prod-columns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 100%;
     height: auto;
-    align-items: flex-end; /* Align items to the bottom */
 }
 
 /*index page*/
