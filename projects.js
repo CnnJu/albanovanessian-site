@@ -30,7 +30,7 @@ const projects = [
   {
     link: "rosasvartstation.html",
     title: "ROSA.SVART.STATION",
-    year: "2020",
+    year: "2021",
     image: "img/project/projects/rosasvart",
     description: "En Lire Plus",
   },
