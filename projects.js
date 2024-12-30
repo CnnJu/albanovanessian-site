@@ -68,26 +68,26 @@ projects.forEach((project) => {
 
   const number = getRandomNumber();
   if (number === 1) {
-    height = 500;
-    width = 500;
+    height = 250;
+    width = 250;
     img = project.image + "_square_500x500.jpg";
     projectDiv.classList.add("square");
   } else if (number === 2) {
-    height = 1000;
-    width = 500;
+    height = 500;
+    width = 250;
     img = project.image + "_tall_500x1000.jpg";
     projectDiv.classList.add("tall");
   } else {
-    height = 500;
-    width = 1000;
+    height = 250;
+    width = 500;
     img = project.image + "_wide_1000x500.jpg";
     projectDiv.classList.add("wide");
   }
 
   const projectContent = `
       <a href="${project.link}" class="project-link">
-        <div class="image-container">
-          ${`<img src="${img}" alt="${project.title}" class="project-image">`}
+        <div class="image-container" style="width: ${width}px; height: ${height}px;">
+          ${`<img src="${img}" alt="${project.title}" class="project-image" style="width: 100%; height: 100%;">`}
         </div>
         <div class="project-img-overlay">
           <h1 class="projects-page-title">${project.title}</h1>
