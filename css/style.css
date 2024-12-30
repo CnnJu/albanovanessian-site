@@ -786,16 +786,17 @@ ul {
     letter-spacing: 0.2em;
 }
 
-.prod-column-left, .prod-column-right {
-    width: 60%;
-    gap: 10px;
+#contact-production {
+    background-color: #F9F9F9;
+    color: black;
+    margin-bottom: 5px;
 }
-
 .prod-columns {
     display: flex;
     justify-content: center;
     max-width: 100%;
     height: auto;
+    gap: 30px;
 }
 
 /*index page*/
