@@ -408,6 +408,7 @@ h3{
     font-family: 'Republica Minor', sans-serif; 
     font-size: clamp(0.5rem, 2vw + 0.5rem, 1rem);
     font-weight: 100;
+    letter-spacing: 0.2rem;
     padding: 0;
 }
 
@@ -512,6 +513,10 @@ h6 {
     font-family: 'DS-Digital', sans-serif;
     font-size: clamp(0.3rem, 2vw + 0.2rem, 0.5rem);
     letter-spacing: 0.2em;
+}
+
+.subtitle-index {
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
 }
 
 img {
