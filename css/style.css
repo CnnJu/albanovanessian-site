@@ -305,6 +305,10 @@ header {
     gap: 0px;
 } */
 
+.subtitle-index {
+
+}
+
 .projects-grid {
     width: 1500px;
     max-width: 100%;
@@ -418,7 +422,7 @@ p {
     font-family: 'Lucida Console', sans-serif;
     font-optical-sizing: auto;
     line-height: 2;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 1rem);
+    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
     letter-spacing: 1px;
     word-spacing: 2px;
     padding: 0;
@@ -493,11 +497,11 @@ h6 {
     color: black;
     background-color: #F9F9F9;
     font-family: 'Plain O Matic', sans-serif;
-    font-weight: 100;
+    font-weight: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
     letter-spacing: 0.3em;
-    width: 100%; /* Set width to 100% of the parent container */
+    /* width: 100%;  Set width to 100% of the parent container */
     padding: 0 25px;
-    box-sizing: border-box;
+    /* box-sizing: border-box;*/
     text-align: left; /* Align text to the left */
     position: relative;
 }
@@ -517,7 +521,7 @@ h6 {
 
 .subtitle-index {
     font-family: 'DS-Digital', sans-serif;
-    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
+    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
 }
 
 img {
