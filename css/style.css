@@ -673,6 +673,7 @@ ul {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    max-width: 940px;
     margin-bottom: 0;
   }
   
