@@ -729,12 +729,12 @@ ul {
 #aboutprofilepicture {
     flex-shrink: 0;
     width: 100%;
-    max-width: 900px; 
+    max-width: 810px; 
     height: auto; 
 }
 
 .about p {
-    max-width: 900px;
+    max-width: 600px;
     line-height: 1.6;
 }
 
