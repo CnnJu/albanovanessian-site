@@ -695,10 +695,10 @@ ul {
   /* Overlay styling for project details */
   .project-img-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; /* Ensure overlay starts at the top of the container */
+    left: 0; /* Ensure overlay starts from the left of the container */
+    width: 100%; /* Cover the entire width of the image */
+    height: 100%; /* Cover the entire height of the image */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -709,6 +709,7 @@ ul {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+  
   
   .project:hover .project-img-overlay {
     opacity: 1; /* Show overlay on hover */
