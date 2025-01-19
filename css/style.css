@@ -122,10 +122,6 @@ main {
     margin: 0 auto;
 }
 
-
-.marginbottomdiv {
-    margin-bottom: 80px;
-}
 a {
     color: #F9F9F9;
     text-decoration: none;
@@ -305,12 +301,8 @@ header {
     gap: 0px;
 } */
 
-.subtitle-index {
-
-}
-
 .projects-grid {
-    width: 1500px;
+    width: 1410px;
     max-width: 100%;
     display: grid;
     margin: 0 auto;
@@ -381,6 +373,7 @@ header {
 h1, h2, h4, h5, h6, .h7, .individual-project-h1, .headingbackground, .supportheading, .supportfunding, .support-h5, .subtitle-support-h5, .subtitle, .fundingplacessubtitle, 
 .contact-heading {
     text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
 }
 
 h1 {
@@ -414,6 +407,7 @@ h3{
     font-weight: 100;
     letter-spacing: 0.2rem;
     padding: 0;
+    margin: 0px 0px 10px 0px;
 }
 
 p {
@@ -423,10 +417,10 @@ p {
     font-optical-sizing: auto;
     line-height: 2;
     font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
     padding: 0;
-    margin: 0;
+    margin: 0px 0px 60px 0px;
 }
 
 .headingbackground {
@@ -493,17 +487,16 @@ h5 {
 }
 
 h6 {
-    font-size: 1.5em;
     color: black;
     background-color: #F9F9F9;
     font-family: 'Plain O Matic', sans-serif;
-    font-weight: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
+    font-size: clamp(1.4rem, 2vw + 0.2rem, 1.6rem);
     letter-spacing: 0.3em;
-    /* width: 100%;  Set width to 100% of the parent container */
     padding: 0 5px;
-    /* box-sizing: border-box;*/
+    box-sizing: border-box;
     text-align: left; /* Align text to the left */
     position: relative;
+    display: inline-flex;
 }
 
 .h7 {
@@ -521,7 +514,7 @@ h6 {
 
 .subtitle-index {
     font-family: 'DS-Digital', sans-serif;
-    font-size: clamp(0.9rem, 2vw + 0.2rem, 1.1rem);
+    font-size: clamp(0.7rem, 2vw + 0.2rem, 0.9rem);
 }
 
 img {
