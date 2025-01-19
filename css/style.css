@@ -342,7 +342,6 @@ header {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    margin-bottom: 80px;
 }
 
 .image-container img {
