@@ -422,7 +422,7 @@ p {
     font-family: 'Lucida Console', sans-serif;
     font-optical-sizing: auto;
     line-height: 2;
-    font-size: clamp(0.6rem, 2vw + 0.2rem, 0.8rem);
+    font-size: clamp(0.8rem, 2vw + 0.2rem, 1rem);
     letter-spacing: 1px;
     word-spacing: 2px;
     padding: 0;
@@ -500,7 +500,7 @@ h6 {
     font-weight: clamp(1.2rem, 2vw + 0.2rem, 1.4rem);
     letter-spacing: 0.3em;
     /* width: 100%;  Set width to 100% of the parent container */
-    padding: 0 25px;
+    padding: 0 5px;
     /* box-sizing: border-box;*/
     text-align: left; /* Align text to the left */
     position: relative;
