@@ -24,12 +24,12 @@ const projects = [
     fontClass: "inthroughwater-font"
   },
   {
-    link: "breakintwo.html",
-    title: "break.in.two",
-    year: "2019",
-    image: "img/project/940px_xdates.png",
+    link: "xdates.html",
+    title: "x.dates",
+    year: "2022",
+    image: "img/project/470px_xdates.png",
     description: "En Lire Plus",
-    fontClass: "breakintwo-font"
+    fontClass: "xdates-font"
   },
   {
     link: "rosasvartstation.html",
