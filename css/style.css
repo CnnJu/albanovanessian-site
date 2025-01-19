@@ -659,52 +659,30 @@ ul {
     margin: 0;
 }
 
-/* Basic reset for image grid */
-/* General styles for the page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .image-grid {
+/* Grid container to center everything */
+.image-grid {
     width: 100%;
     margin: 0 auto;
     max-width: 1410px;
   }
   
-  /* Styling for image rows */
+  /* For the first row (Queerhub and gifs) */
   .image-row {
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .image-row img {
-    display: block;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
-    height: auto;
+    margin-bottom: 0;
   }
   
-  /* A new container for gifs under Queerhub */
+  /* For the gifs row under Queerhub */
   .gif-row {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
+    width: 940px; /* Ensures the gifs are together and take the same width as Queerhub */
   }
   
-  /* Stacked layout for smaller images */
-  .stacked {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Corrected image size classes */
   .img-940 {
     width: 940px;
   }
@@ -717,7 +695,12 @@ ul {
     width: 1410px;
   }
   
-  /* Styles for the project container */
+  .stacked {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Image hover overlay */
   .project {
     position: relative;
     overflow: hidden;
@@ -760,7 +743,7 @@ ul {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-  }  
+  }
 
 /* 'about' page specifics */
 .about {
