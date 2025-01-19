@@ -105,7 +105,7 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -118,7 +118,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ img:hover::before {
   
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -183,7 +183,7 @@ header {
 .header-container {
     position: relative;
     margin-bottom: 80px;
-    max-width: 1400px;
+    max-width:  1410px;
 }
 
 .header-image {
@@ -281,7 +281,7 @@ header {
         margin-bottom: 75px;
     }
     .project-columns {
-        max-width: 1400px;
+        max-width:  1410px;
         flex-direction: column;
     }
 
@@ -294,7 +294,7 @@ header {
 }
 
 .main-content {
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -548,7 +548,7 @@ ul {
 }
 /*individual project pages*/
 .project-img {
-    max-width: 1400px;
+    max-width:  1410px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0;
@@ -617,7 +617,7 @@ ul {
 }
 
 .logofunding {
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -727,7 +727,7 @@ ul {
 
 /* 'about' page specifics */
 .about {
-    max-width: 1400px;
+    max-width:  1410px;
     display: flex;
     align-items: flex-start; 
     gap: 20px;
@@ -827,7 +827,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mosaic style */
     gap: 10px;
-    max-width: 1400px;
+    max-width:  1410px;
     margin: 0 auto;
 }
 
