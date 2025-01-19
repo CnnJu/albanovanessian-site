@@ -659,23 +659,136 @@ ul {
     margin: 0 ;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-    gap: 10px; /* Space between images */
-    max-width: 1410px;
-    width: 100%;
-    margin: 20px auto;
+/* Basic reset for image grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-.image {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Optional, based on your previous preferences */
+    color: #fff;
+  }
+  
+  #projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1410px; /* Set your page width limit */
+    padding: 20px;
+  }
+  
+  /* General style for each project container */
+  .project {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border: 2px solid #fff; /* Optional: for visual separation */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional */
-}
+    position: relative;
+    overflow: hidden;
+    background-color: #333; /* Add a background color to enhance visibility if needed */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover; /* Ensures the image fills the container while maintaining the aspect ratio */
+  }
+  
+  /* Overlay styling for project details */
+  .project-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark background with opacity */
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project:hover .project-img-overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .projects-page-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .year,
+  .read-more {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .year{
+    font-family: 'DS-Digital', sans-serif;
+  }
+  
+  .read-more {
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* Custom fonts for each project title */
+  .queerhub-font {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .inthroughwater-font {
+    font-family: 'Courier New', monospace;
+  }
+  
+  .breakintwo-font {
+    font-family: 'Georgia', serif;
+  }
+  
+  .rosasvartstation-font {
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .cominginoutsolo-font {
+    font-family: 'Lucida Console', monospace;
+  }
+  
+  .comingoutvideo-font {
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  /* Optional: Adjust the grid container layout */
+  #projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr)); /* Adjust grid based on image width */
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1410px; /* Maximum page width */
+    padding: 20px;
+  }
+  
+@media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* Stack images in a single column */
+    }
+    .image-grid img {
+      grid-column: span 1; /* Each image takes full width */
+    }
+  }
 
 .project-image {
     width: 50%;
