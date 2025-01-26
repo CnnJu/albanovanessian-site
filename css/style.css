@@ -655,7 +655,6 @@ ul {
 .project {
     position: relative;
     width: 100%;
-    max-width: 1000px;
     margin: 0;
 }
 
@@ -664,43 +663,7 @@ ul {
     width: 100%;
     margin: 0 auto;
     max-width: 1410px;
-  }
-  
-  /* For the first row (Queerhub and gifs) */
-  .image-row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 940px;
-    margin-bottom: 0;
-  }
-  
-  /* For the gifs row under Queerhub */
-  .gif-row {
-    display: flex;
-    justify-content: flex-start;
-    width: 940px; /* Ensures the gifs are together and take the same width as Queerhub */
-  }
-  
-  .img-940 {
-    width: 940px;
-  }
-  
-  .img-470 {
-    width: 470px;
-  }
-  
-  .img-1410 {
-    width: 1410px;
-  }
-  
-  .stacked {
-    display: flex;
-    flex-direction: column;
-  }
-  
+  }  
   /* Image hover overlay */
   .project {
     position: relative;
