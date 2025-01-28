@@ -90,4 +90,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
       console.log("Table populated successfully!");
-    }
+    });
