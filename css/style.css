@@ -821,6 +821,7 @@ ul {
     text-align: left;
     color: #fff; /* White text for the cells */
     border: none; /* Remove borders */
+    vertical-align: top;
   }
   
   .event-table td:nth-child(1) {

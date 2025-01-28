@@ -46,42 +46,48 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     ];
+
+    let lastYear = ""; // Keep track of the last displayed year
+
+    events.forEach((event) => {
+      // Year
+      const yearCell = document.createElement("td");
+      if (event.year !== lastYear) {
+        yearCell.textContent = event.year;
+        lastYear = event.year; // Update lastYear
+      } else {
+        yearCell.textContent = ""; // Empty cell for repeated years
+      }
   
     const eventTableBody = document.getElementById("event-data");
+      row.appendChild(yearCell);
   
-    if (eventTableBody) {
-      events.forEach((event) => {
-        const row = document.createElement("tr");
-    
-        // Year
-        const yearCell = document.createElement("td");
-        yearCell.textContent = event.year;
-        row.appendChild(yearCell);
-    
-        // Dates
-        const datesCell = document.createElement("td");
-        datesCell.textContent = event.dates;
-        row.appendChild(datesCell);
-    
-        // Project
-        const projectCell = document.createElement("td");
-        projectCell.textContent = event.project;
-        row.appendChild(projectCell);
-    
-        // Place & Event Type
-        const detailsCell = document.createElement("td");
-        detailsCell.innerHTML = `
-          ${event.details.place}<br>
-          <span class="event-type">${event.details.type}</span>
-        `;
-        row.appendChild(detailsCell);
-    
-        eventTableBody.appendChild(row);
-      });
-    // console.log("Table populated successfully!");
+      // Dates
+      const datesCell = document.createElement("td");
+      datesCell.textContent = event.dates;
+      row.appendChild(datesCell);
+  
+      // Project
+      const projectCell = document.createElement("td");
+      projectCell.textContent = event.project;
+      row.appendChild(projectCell);
+  
+      // Place & Event Type
+      const detailsCell = document.createElement("td");
+      detailsCell.innerHTML = `
+        ${event.details.place}<br>
+        <span class="event-type">${event.details.type}</span>
+      `;
+      row.appendChild(detailsCell);
+  
+      eventTableBody.appendChild(row);
+    });
+  // console.log("Table populated successfully!");
+    console.log("Table populated successfully!");
+  } else {
+      // console.log("Table populated successfully!");
       console.log("Table populated successfully!");
     } else {
       console.error("Element with id 'event-data' not found.");
     }
   });
-  
