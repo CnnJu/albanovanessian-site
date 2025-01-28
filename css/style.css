@@ -814,6 +814,7 @@ ul {
     max-width: 1410px;
     border-collapse: collapse;
     background-color: transparent; /* Make the table background match the page */
+    margin-top: 80px;
   }
   
   .event-table td {
@@ -841,4 +842,26 @@ ul {
     font-size: 12px;
     color: #ccc; /* Slightly lighter text for event type */
     margin-top: 5px;
+  }
+
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
   }

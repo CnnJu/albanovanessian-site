@@ -93,4 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
       eventTableBody.appendChild(row);
         });
       }
+
+      // Add hover event to dropdown items
+  dropdownItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      const year = item.getAttribute("data-year");
+      populateTable(year);
     });
+  });
+
+  // Default: Show events for the first year (e.g., 2025)
+  populateTable("2025");
+});
