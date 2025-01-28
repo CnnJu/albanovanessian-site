@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const eventTableBody = document.getElementById("event-data");
-  
     if (!eventTableBody) {
-      console.log("Error: Element with id 'event-data' not found.");
-      return;
+        console.warn("Warning: Element with id 'event-data' not found.");
     }
+  
+    if (eventTableBody) {
       const events = [
         {
           year: "2025",
@@ -53,18 +53,18 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ];
   
-      let lastYear = ""; // Keep track of the last displayed year
+      let lastYear = ""; // Track the last displayed year
   
       events.forEach((event) => {
         const row = document.createElement("tr");
   
-        // Year
+        // Year (only display the first occurrence of a new year)
         const yearCell = document.createElement("td");
         if (event.year !== lastYear) {
-          yearCell.innerHTML = "&nbsp;"; // Non-breaking space for repeated years
-          lastYear = event.year; // Update lastYear
+          yearCell.textContent = event.year; // Show year
+          lastYear = event.year; // Update the tracker
         } else {
-          yearCell.textContent = ""; // Empty cell for repeated years
+          yearCell.textContent = ""; // Leave the cell empty
         }
         row.appendChild(yearCell);
   
@@ -80,14 +80,23 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Place & Event Type
         const detailsCell = document.createElement("td");
-        detailsCell.innerHTML = `
-          ${event.details.place}<br>
-          <span class="event-type">${event.details.type}</span>
-        `;
-        row.appendChild(detailsCell);
+        const placeText = document.createTextNode(event.details.place);
+        const lineBreak = document.createElement("br");
+        const eventTypeSpan = document.createElement("span");
+        eventTypeSpan.className = "event-type";
+        eventTypeSpan.textContent = event.details.type;
+
+        detailsCell.appendChild(placeText);
+        detailsCell.appendChild(lineBreak);
+        detailsCell.appendChild(eventTypeSpan);
+      alert("Events table has been successfully populated!");
   
         eventTableBody.appendChild(row);
       });
   
       console.log("Table populated successfully!");
-    });
+    } else {
+      console.error("Element with id 'event-data' not found.");
+    }
+  });
+  
