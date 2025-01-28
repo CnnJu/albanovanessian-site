@@ -848,20 +848,27 @@ ul {
 /* Dropdown Menu Styles */
 .dropdown-menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; 
+    width: 100%;
+    max-width: 500px;
     margin-bottom: 20px;
   }
   
   .dropdown-item {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
   }
   
-  .dropdown-item:hover {
-    background-color: #555;
+  .dropdown-content {
+    font-family: 'Republica Minor', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+  }
+  
+  .dropdown-content:hover {
+    color: #ccc;
   }
