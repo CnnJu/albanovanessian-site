@@ -79,24 +79,18 @@ document.addEventListener("DOMContentLoaded", () => {
         row.appendChild(projectCell);
   
         // Place & Event Type
-        const detailsCell = document.createElement("td");
-        const placeText = document.createTextNode(event.details.place);
-        const lineBreak = document.createElement("br");
-        const eventTypeSpan = document.createElement("span");
-        eventTypeSpan.className = "event-type";
-        eventTypeSpan.textContent = event.details.type;
+      const detailsCell = document.createElement("td");
+      const placeText = document.createTextNode(event.details.place);
+      const eventTypeSpan = document.createElement("span");
+      eventTypeSpan.className = "event-type";
+      eventTypeSpan.textContent = event.details.type;
+      detailsCell.appendChild(placeText);
+      detailsCell.appendChild(document.createElement("br"));
+      detailsCell.appendChild(eventTypeSpan);
+      row.appendChild(detailsCell);
 
-        detailsCell.appendChild(placeText);
-        detailsCell.appendChild(lineBreak);
-        detailsCell.appendChild(eventTypeSpan);
-      alert("Events table has been successfully populated!");
-  
-        eventTableBody.appendChild(row);
-      });
-  
-      console.log("Table populated successfully!");
-    } else {
-      console.error("Element with id 'event-data' not found.");
-    }
-  });
-  
+      // Append the completed row to the table
+      eventTableBody.appendChild(row);
+        });
+      }
+    });
