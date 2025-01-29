@@ -844,31 +844,25 @@ ul {
     margin-top: 5px;
   }
 
-
 /* Dropdown Menu Styles */
 .dropdown-menu {
-    display: flex;
-    justify-content: flex-start; 
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
-  }
-  
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .dropdown-content {
-    font-family: 'Republica Minor', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer; 
-    text-decoration: none; 
-    transition: color 0.3s ease; 
-  }
-  
-  .dropdown-content:hover {
-    color: #ccc;
-  }
+  display: flex; /* Arrange items horizontally */
+  justify-content: flex-start; /* Align menu to the left */
+  width: 100%;
+  max-width: 500px; /* Limit width */
+  margin-bottom: 20px;
+}
+
+.dropdown-item {
+  font-family: 'Republica Minor', sans-serif; /* Match year style */
+  font-size: 16px;
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underlines */
+  cursor: pointer; /* Indicate interactivity */
+  padding: 5px 15px; /* Space between menu items */
+  transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #ccc; /* Light gray hover effect */
+}
