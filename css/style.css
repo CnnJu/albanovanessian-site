@@ -836,13 +836,12 @@ ul {
   .event-table td:nth-child(4) {
     font-family: 'Lucida Console', monospace;
     font-size: 16px;
-    margin-top: 5px;
   }
   
   .event-table td:nth-child(4) .event-type {
     display: block;
     font-size: 12px;
-    color: #ccc; /* Slightly lighter text for event type */
+    color: #ccc;
     margin-top: 5px;
   }
 
