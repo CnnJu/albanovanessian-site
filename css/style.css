@@ -814,7 +814,8 @@ ul {
     max-width: 1410px;
     border-collapse: collapse;
     background-color: transparent; /* Make the table background match the page */
-    margin-top: 80px;
+    margin: 80px 0;
+    text-transform: capitalize;
   }
   
   .event-table td {
