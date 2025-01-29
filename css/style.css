@@ -814,8 +814,7 @@ ul {
     max-width: 1410px;
     border-collapse: collapse;
     background-color: transparent;
-    margin: 80px 0;
-    text-transform: capitalize;
+    margin: 40px 0 80px 0;
   }
   
   .event-table td {
@@ -824,12 +823,12 @@ ul {
     color: #fff;
     border: none;
     vertical-align: top;
+    text-transform: capitalize;
   }
   
   .event-table td:nth-child(1) {
     font-family: 'Republica Minor', sans-serif;
     font-size: 16px;
-    margin-top: O;
   }
   
   .event-table td:nth-child(2),
@@ -837,6 +836,7 @@ ul {
   .event-table td:nth-child(4) {
     font-family: 'Lucida Console', monospace;
     font-size: 16px;
+    margin-top: 5px;
   }
   
   .event-table td:nth-child(4) .event-type {
@@ -848,23 +848,26 @@ ul {
 
 /* Dropdown Menu Styles */
 .dropdown-menu {
-  display: flex; /* Arrange items horizontally */
-  justify-content: flex-start; /* Align menu to the left */
+  display: flex;
+  justify-content: flex-start; 
   width: 100%;
-  max-width: 500px; /* Limit width */
-  margin-bottom: 20px;
+  max-width: 700px;
 }
 
 .dropdown-item {
   font-family: 'Republica Minor', sans-serif; /* Match year style */
   font-size: 16px;
-  color: #fff; /* White text */
-  text-decoration: none; /* Remove underlines */
-  cursor: pointer; /* Indicate interactivity */
-  padding: 5px 15px; /* Space between menu items */
+  color: #fff; 
+  text-decoration: none; 
+  cursor: pointer;
+  padding: 5px 15px;
   transition: color 0.3s ease;
 }
 
 .dropdown-item:hover {
-  color: #ccc; /* Light gray hover effect */
+  color: #ccc;
 }
+.dropdown-content.active {
+    color: #a9a8a8; /* Keep it highlighted when selected */
+    text-decoration: underline; /* Optional: Show it's active */
+  }
