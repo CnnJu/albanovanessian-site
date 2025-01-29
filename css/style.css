@@ -813,7 +813,7 @@ ul {
     width: 100%;
     max-width: 1410px;
     border-collapse: collapse;
-    background-color: transparent; /* Make the table background match the page */
+    background-color: transparent;
     margin: 80px 0;
     text-transform: capitalize;
   }
@@ -821,14 +821,15 @@ ul {
   .event-table td {
     padding: 10px;
     text-align: left;
-    color: #fff; /* White text for the cells */
-    border: none; /* Remove borders */
+    color: #fff;
+    border: none;
     vertical-align: top;
   }
   
   .event-table td:nth-child(1) {
     font-family: 'Republica Minor', sans-serif;
     font-size: 16px;
+    margin-top: O;
   }
   
   .event-table td:nth-child(2),
