@@ -874,3 +874,8 @@ ul {
     color: #a9a8a8; /* Keep it highlighted when selected */
     text-decoration: none; /* Optional: Show it's active */
   }
+
+/* Footer */
+footer {
+    padding: 20px;
+}
