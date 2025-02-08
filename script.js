@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2025",
         dates: "17.03 — 21.03",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "La Balsamine, Bruxelles",
           type: "RÉSIDENCE CRÉATION SONORE",
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2025",
         dates: "14.04 — 16.04",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "La Balsamine, Bruxelles",
           type: "RÉSIDENCE technique",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2025",
         dates: "17 - 18 - 19.04",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "La Balsamine, Bruxelles",
           type: "performances - premières",
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2024",
         dates: "02.01 — 05.01",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "KUSTENWERKPLAATS PIANOFABRIEK,BRUXELLES",
           type: "sortie de résidence",
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2024",
         dates: "08.01 — 12.01",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "centre national de la danse, paris",
           type: "sortie de résidence",
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2024",
         dates: "09.12 — 13.12",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "dansharmonie, bruxelles",
           type: "résidence de création sonore",
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "12.03 - 05.04",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "art and cultural studies laboratory, yerevan - Arménie",
           type: "résidence de recherche",
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "12.06 — 18.06",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "ad lib résidence, La Vallée, Bruxelles",
           type: "résidence de création",
@@ -282,7 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "31.07 — 04.08",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "tanzquartier, vienne",
           type: "résidence de recherche avec mathilde monnier",
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "07.08 — 11.08",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "P.A.R.T.S. Summer residencies, bruxelles",
           type: "résidence de création",
@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "04.10",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "rites, festival d'automne, paris",
           type: "performance",
@@ -345,7 +345,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         year: "2023",
         dates: "18.12 — 22.12",
-        project: "X. Dates",
+        project: "X.Dates",
         details: {
           place: "KUSTENWERKPLAATS PIANOFABRIEK,BRUXELLES",
           type: "sortie de résidence",
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function populateTable(year) {
       const newRows = [];
-      let firstOccurrence = true; // Track if it's the first row for the year
+      let firstOccurrence = true; 
   
       events
         .filter((event) => event.year === year)
@@ -369,9 +369,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const yearCell = document.createElement("td");
           if (firstOccurrence) {
             yearCell.textContent = event.year;
-            firstOccurrence = false; // Prevents repeating the year
+            firstOccurrence = false; 
           } else {
-            yearCell.textContent = ""; // Leaves the cell blank for subsequent rows
+            yearCell.textContent = ""; 
           }
           row.appendChild(yearCell);
   
